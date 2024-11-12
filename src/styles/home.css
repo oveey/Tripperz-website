@@ -1,0 +1,44 @@
+.header__section {
+  background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1731431491/bg_lnag0j.png");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 150px;
+  margin-top: 0;
+}
+
+.header__inner__con{
+ text-align: center;
+ color: #fff;
+
+    
+}
+
+.header__text {
+  margin-top: 70px;
+  padding: 0 16rem ;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.header__p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 26rem 2rem ;
+
+}
+
+.button{
+    padding:2rem 4rem  ;
+    border-radius: 138.46px;
+    font-size: 20px;
+    background: rgba(90, 104, 165, 0.13);
+    backdrop-filter: blur(6.92307710647583px);
+    border: none;
+    font-weight: 500; 
+
+
+}
+
+  

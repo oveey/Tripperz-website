@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Nav } from "../component/Nav";
+import "../styles/home.css";
 
 export const Home = () => {
   const images = [
@@ -19,11 +20,29 @@ export const Home = () => {
         <div className="header__inner__con">
           <Nav />
           <h1 className="header__text">Experience a Lifetime of Adventure</h1>
-          <p>
+          <p className="header__p">
             We are a passionate travel agency that spent years helping people
             explore the world.
           </p>
-          <button className="button">Explore Now</button>
+          <div>
+            <button class="button">
+              Explore Now
+              <span class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="arrow-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
         </div>
       </section>
 

@@ -1,0 +1,27 @@
+
+
+
+.home__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  padding: 20px 150px;
+  cursor: pointer;
+  z-index: 2000;
+  top: 0;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.home__nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.nav_link {
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
