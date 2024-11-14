@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Nav } from "../component/Nav";
+import Faq from "../component/Faq";
 import "../styles/home.css";
+
 
 export const Home = () => {
   const images = [
@@ -48,21 +50,45 @@ export const Home = () => {
 
       <section className="whoweare__section">
         <div className="whoweare__con">
-          <p>Who we are </p>
-          <h2>
-            We are a passionate travel agency that spent years helping people
-            explore the world.{" "}
-          </h2>
+          <div className="whoweare">
+            <p>Who we are </p>
+            <h2>
+              We are a passionate travel agency that spent years helping people
+              explore the world.{" "}
+            </h2>
+            <div className="box">
+              <div className="box_1">
+                <h3>3X</h3>
+                <h6>Faster Booking Process</h6>
+              </div>
+
+              <div className="box_1">
+                <h3>500+</h3>
+                <h6>Happy Travelers</h6>
+              </div>
+
+              <div className="box_1">
+                <h3>95%</h3>
+                <h6>Customer Satisfaction</h6>
+              </div>
+            </div>
+          </div>
           <div className="who_left_con">
             <div className="img__con">
-              <img src="" alt="" />
+              <img
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1731431498/whoweare_ldy0do.png"
+                alt="a woman holding a phone up"
+              />
             </div>
           </div>
         </div>
       </section>
 
       <section className="comment__section">
-        <div className="comment__con">
+        <div
+          className="comment__con"
+          // style={{ backgroundImage: `url(${commentImage})` }}
+          >
           <span>icon</span>
           <h1 className="comment__heading">
             The world is a book, and those who do not travel read only one page.
@@ -89,7 +115,7 @@ export const Home = () => {
             <div className="destination__img__2">
               {images.map((imageSet) => (
                 <div
-                  style={{ backgroundImage: `url(${imageSet.urls[0]})` }}
+                  // style={{ backgroundImage: `url(${commentImage})` }}
                   className="image__con"
                 >
                   <div className="inside__image__text">
@@ -124,13 +150,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
-
-      <section className="faq__section">
-        <div className="faq__con">
-          <h1 className="faq__heading">Frequently asked questions</h1>
-          <p>Everything you need to know about the product and billing.</p>
-        </div>
-      </section>
+      <Faq />
 
       <section className="location__section">
         <div className="location__con">
