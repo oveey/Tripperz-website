@@ -5,6 +5,30 @@ import "../styles/nav.css";
 
 
 export const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 900);
+      if (window.innerWidth > 900) {
+        setIsOpen(false); // Close menu if resizing above 900px
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    if (isMobile) {
+      setIsOpen(!isOpen);
+    }
+  };
+
   return (
     <>
       <div className="home__nav">
@@ -34,8 +58,27 @@ export const Nav = () => {
               Contact
             </NavLink>
           </li>
+
+          
+          <div className="dropdown">
+            <span className="colors"></span>
+            <span className="colors"></span>
+            <span className="colors"></span>
+            <span className="colors"></span>
+          </div>
+
         </ul>
+
+        <button
+          className={`${isOpen ? "menu" : ""}`}
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+        </button>
+
       </div>
     </>
   );
 };
+
