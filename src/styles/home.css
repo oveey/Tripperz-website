@@ -34,18 +34,39 @@
   display: flex;
   justify-content: center;
 }
+
+
 .button__con {
   display: flex;
-  padding: 2rem 4rem;
-  border-radius: 138.46px;
-  text-align: center;
-  font-size: 20px;
+  align-items: center;
+  padding-left: 32px;
   background: rgba(90, 104, 165, 0.13);
-  backdrop-filter: blur(6.92307710647583px);
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.26);
   font-weight: 500;
+  font-size: 20px;
+  backdrop-filter: blur(6.92307710647583px);
   cursor: pointer;
+  border-radius: 138.462px;
 }
+
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.arrow-icon-font-awesome {
+  font-size: 80px; /* Adjust the size of the Font Awesome icon */
+  color: rgb(0, 0, 0); /* Make the icon white */
+  background-color: #ffffff;
+  border-radius: 50%; /* Make it circular */
+  padding: 2px; /* Add some padding to make it look like a button */
+  margin-left: 10px; /* Space between the text and the icon */
+  transform: rotate(-40deg); /* Rotate the icon by 45 degrees */
+
+}
+
 
 /***************************************** Who we are section **********************************************************************************/
 
@@ -203,6 +224,7 @@
   border: 1px solid var(--Blue-200, #b2ddff);
   border-radius: 16px;
   background: var(--Blue-50, #eff8ff);
+  margin-bottom: 40px;
 }
 
 .our__service__heading {
@@ -275,8 +297,7 @@
   height: 100%; /* Adjust as needed */
 }
 
-.inside__image__text h1,
-.inside__image__text p {
+.inside__image__text h1{
   padding: 8px 16px;
   border-radius: 8px;
   border: 0.769px solid rgba(255, 255, 255, 0.26);
@@ -284,15 +305,38 @@
   backdrop-filter: blur(6.92307710647583px);
 }
 
+.inside__image__text p {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  font-weight: 500;
+  border-radius: 138.462px;
+  border: 0.769px solid rgba(255, 255, 255, 0.26);
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6.92307710647583px);
+  cursor: pointer;
+
+}
+.arrow-icon-font-awesome2{
+  font-size: 40px; /* Adjust the size of the Font Awesome icon */
+  color: rgb(0, 0, 0); /* Make the icon white */
+  background: #eff8ff;
+  border-radius: 50%; /* Make it circular */
+  padding: 2px; /* Add some padding to make it look like a button */
+  margin-left: 10px; /* Space between the text and the icon */
+  transform: rotate(-40deg); /* Rotate the icon by 45 degrees */
+
+}
+
 /***************************************** Testimonial section **********************************************************************************/
 
 .testimonial__section {
   display: flex;
-  padding: 96px 0px;
-  justify-content: center;
+  padding: 96px;
   flex-direction: column;
-  align-items: center;
   gap: 64px;
+  align-items: flex-start;
+
 }
 
 .testimonial__heading {
@@ -303,18 +347,24 @@
   font-weight: 400;
   line-height: 120%;
   width: 439px;
+  
 }
 .testimonial__con {
   display: flex;
-  justify-content: space-between;
   align-items: center; /* Aligns items vertically at the center */
-  width: 80%;
+  justify-content: space-between;
+  width: 100%;
+}
+.testimonial__con img {
+  cursor: pointer;
+  
 }
 .testimonial__sub {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .testimonial__sub h2 {

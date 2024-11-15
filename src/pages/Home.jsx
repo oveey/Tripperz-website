@@ -3,6 +3,7 @@ import { Nav } from "../component/Nav";
 import Faq from "../component/Faq";
 import "../styles/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export const Home = () => {
   const images = [
@@ -65,19 +66,11 @@ export const Home = () => {
           <div className="button">
             <button className="button__con">
               Explore Now
-              <span class="icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="arrow-icon"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+              <span className="icon-container">
+                <FontAwesomeIcon
+                  icon={faCircleArrowRight}
+                  className="arrow-icon-font-awesome"
+                />
               </span>
             </button>
           </div>
@@ -164,7 +157,15 @@ export const Home = () => {
               >
                 <div className="inside__image__text">
                   <h1>{imageSet.mainT}</h1>
-                  <p>{imageSet.smallT}</p>
+                  <p>
+                    {imageSet.smallT}{" "}
+                    <span className="icon-container2">
+                      <FontAwesomeIcon
+                        icon={faCircleArrowRight}
+                        className="arrow-icon-font-awesome2"
+                      />
+                    </span>
+                  </p>
                 </div>
               </div>
             ))}
@@ -177,6 +178,7 @@ export const Home = () => {
           <h1 className="testimonial__heading">
             What Our Clients Say About Us
           </h1>
+          <img src="./assets/arrow.svg" alt="" />
         </div>
         <div className="testimonial__sub">
           <h2>
@@ -187,7 +189,7 @@ export const Home = () => {
             <h3>Caitlyn King</h3>
             <p>Head of Design, Layers</p>
             <img src="./assets/Stars.svg" alt="stars" />
-            <span>pagnition</span>
+            <span>•••••</span>
           </div>
         </div>
       </section>
