@@ -9,14 +9,19 @@
 }
 
 .header__inner__con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  gap: 2rem;
+  align-items: center;
   color: #fff;
 }
 
 .header__text {
   margin-top: 70px;
-  padding: 0 16rem;
   font-size: 88px;
+  max-width: 1000px;
   font-style: normal;
   font-weight: 600;
 }
@@ -25,7 +30,8 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  padding: 0 26rem 2rem;
+  max-width: 500px;
+  width: 100%;
 }
 
 /***************************************** Button section **********************************************************************************/
@@ -166,6 +172,7 @@
 
 .comment__section {
   padding: 96px;
+
 }
 
 .comment__con {
@@ -176,11 +183,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 1280px;
+  width: 100%;
   height: 680px;
   gap: 40px;
   color: #f5fdff;
   padding: 0 80px;
+  border-radius: 20px;
 }
 
 .comment__heading {
@@ -249,7 +257,7 @@
 
 .destination__section {
   display: flex;
-  padding: 96px 0px;
+  padding: 96px ;
   flex-direction: column;
   align-items: center;
 }
@@ -262,28 +270,28 @@
 .destination__con {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 90px;
-  align-items: flex-start;
+  align-items: center;
   gap: 64px;
 }
+
 .destination__img {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
 }
+  
+/* 
+.set3-style {
+} */
+
 
 .image__con {
   height: 480px; /* Adjust as needed */
-  width: 600px; /* Adjust as needed */
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
   background-size: cover;
-  background-position: center;
   margin: 10px; /* Adjust spacing as needed */
   border-radius: 8px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   color: white;
-  position: relative;
 }
 
 .inside__image__text {

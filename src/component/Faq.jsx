@@ -41,18 +41,22 @@ const Faq = () => {
       answer:
         "Unlock the potential of artificial intelligence with our AI and machine learning services. We develop intelligent solutions that enhance decision-making, automate processes, and provide deep insights into your data.",
     },
-
   ];
 
   return (
     <div className="faq__section">
-      <div className="faq__header">
+      <div className="faq__header" data-aos="fade-up" data-aos-duration="3000">
         <h1>Frequently asked questions</h1>
         <p>Everything you need to know about the product and billing.</p>
       </div>
 
       {faqData.map((item, index) => (
-        <div className="faq-item" key={index}>
+        <div
+          className="faq-item"
+          key={index}
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <div className="question" onClick={() => toggleAnswer(index)}>
             {item.question}
             <FontAwesomeIcon
@@ -63,7 +67,6 @@ const Faq = () => {
         </div>
       ))}
     </div>
-   
   );
 };
 
