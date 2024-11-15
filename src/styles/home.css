@@ -286,7 +286,6 @@
   display: flex;
   padding: 96px;
   flex-direction: column;
-  align-items: center;
 }
 .destination__heading {
   font-size: 48px;
@@ -297,28 +296,35 @@
 .destination__con {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 64px;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .destination__img {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+
+
+
+.image__con {
+  height: 480px; /* Adjust as needed */
+  width: 100%;
+  flex: 1 1 calc(50% - 10px); /* Each image takes 50% width minus the gap */
+  max-width: calc(50% - 20px); /* Prevents exceeding half the container width */
+  background-size: cover;
+  background-position: center; /* Ensures the image is centered */
+  margin: 10px; /* Adjust spacing as needed */
+  border-radius: 8px;
+  color: white;
+
 }
 
 /* 
 .set3-style {
 } */
-
-.image__con {
-  height: 480px; /* Adjust as needed */
-  width: 100%;
-  max-width: 520px; /* Adjust as needed */
-  background-size: cover;
-  margin: 10px; /* Adjust spacing as needed */
-  border-radius: 8px;
-  color: white;
-}
 
 .inside__image__text {
   display: flex;
@@ -397,9 +403,11 @@
   justify-content: space-between;
   width: 100%;
 }
+
 .testimonial__con img {
   cursor: pointer;
 }
+
 .testimonial__sub {
   display: flex;
   flex-direction: column;
@@ -474,7 +482,7 @@
 
 /***************************************** Media query **********************************************************************************/
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .header__section {
     padding-bottom: 200px;
   }
@@ -650,12 +658,12 @@
     font-size: 32px;
   }
 
-  .destination__con {
+  /* .destination__con {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 44px;
-  }
+  } */
   /* 
   .destination__img {
     display: flex;
@@ -663,13 +671,7 @@
   } */
 
   .image__con {
-    height: 480px; /* Adjust as needed */
-    width: 100%;
-    max-width: 520px; /* Adjust as needed */
-    background-size: cover;
-    margin: 10px; /* Adjust spacing as needed */
-    border-radius: 8px;
-    color: white;
+    max-width: 347px; 
   }
 
   .inside__image__text {

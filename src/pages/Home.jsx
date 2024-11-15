@@ -144,11 +144,7 @@ export const Home = () => {
 
       <section className="our__service__section">
         <div className="our__service__con">
-          <div
-            className="our__service"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-          >
+          <div className="our__service" data-aos="fade-up"data-aos-duration="1000">
             <p className="service__title">Our service</p>
             <h1 className="our__service__heading">
               Our comprehensive services are designed to cater to all your
@@ -156,11 +152,7 @@ export const Home = () => {
             </h1>
           </div>
 
-          <div
-            className="image_set"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-          >
+          <div className="image_set" data-aos="fade-up" data-aos-duration="3000">
             <img src="./assets/Frame 1.png" alt="" />
             <img src="./assets/Frame 2.png" alt="" />
             <img src="./assets/Frame 3.png" alt="" />
