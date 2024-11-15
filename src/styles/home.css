@@ -439,7 +439,7 @@
 
   .header__text {
     margin-top: 85px;
-    font-size: 48px;
+    font-size: 50px;
     max-width: 400px;
     line-height: 120%; /* 57.6px */
   }
@@ -466,6 +466,8 @@
     padding: 1rem; /* Equivalent to 96px for better readability */
     gap: 2rem; /* Equivalent to 64px */
     transform: translateY(-2rem); /* Equivalent to -30px */
+    margin-bottom: 6rem;
+
   }
   .whoweare h2 {
     font-size: 32px;
@@ -533,6 +535,8 @@
 
   .comment__section {
     padding: 16px;
+    margin-bottom: 6rem;
+
   }
 
   .comment__con {
@@ -563,6 +567,7 @@
   .our__service__section {
     padding: 16px;
     overflow: hidden;
+    margin-bottom: 6rem;
   }
   .our__service__con {
     display: flex;
@@ -592,6 +597,8 @@
 
   .destination__section {
     padding: 16px;
+    margin-bottom: 6rem;
+
   }
   .destination__heading {
     font-size: 32px;
@@ -664,6 +671,8 @@
   .testimonial__section {
     padding: 16px;
     gap: 64px;
+    margin-bottom: 6rem;
+
   }
 
   .testimonial__heading {
@@ -720,6 +729,7 @@
     text-align: center;
     align-items: center;
     gap: 64px;
+    
   }
 
   .location__con {
