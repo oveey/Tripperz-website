@@ -6,6 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 
 export const Home = () => {
   useEffect(() => {
@@ -67,7 +72,7 @@ export const Home = () => {
   return (
     <>
       <section className="header__section">
-      <Nav />
+        <Nav />
 
         <div className="header__inner__con " data-aos="zoom-in-down">
           <h1 className="header__text">Experience a Lifetime of Adventure</h1>
@@ -114,7 +119,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="img__con">
+          <div className="img__con" data-aos="fade-up" data-aos-duration="3000">
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1731431498/whoweare_ldy0do.png"
               alt="a woman holding a phone up"
@@ -229,6 +234,7 @@ export const Home = () => {
             <img src="./assets/Stars.svg" alt="stars" />
             <span>•••••</span>
           </div>
+
         </div>
       </section>
       <Faq />
@@ -241,7 +247,7 @@ export const Home = () => {
         >
           <h1 className="location__heading">Our location</h1>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.422084537781!2d7.930685574603667!3d5.03510003866872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d57be8c2100ed%3A0xf591310c584c7b3c!2sPaul%20Bassey%20St%2C%20Uyo%20520103%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v1721089920342!5m2!1sen!2sng"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31715.214649514615!2d3.6194410057794744!3d6.470676235337425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf9ad9283e39b%3A0x1dbc4c625ed7f850!2sJoy%20Good%20mall!5e0!3m2!1sen!2sng!4v1731682410319!5m2!1sen!2sng"
             width="100%"
             height="600vh"
             style={{ border: 0 }}

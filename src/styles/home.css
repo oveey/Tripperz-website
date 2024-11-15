@@ -4,7 +4,7 @@
   background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1731431491/bg_lnag0j.png");
   background-position: center;
   background-size: cover;
-  padding-bottom: 150px;
+  padding-bottom: 250px;
   margin-top: 0;
 }
 
@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
   color: #fff;
 }
@@ -24,7 +24,7 @@
   max-width: 900px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%; /* 96.8px */
+  line-height: 110%;
 }
 
 .header__p {
@@ -54,7 +54,19 @@
   backdrop-filter: blur(6.92307710647583px);
   cursor: pointer;
   border-radius: 138.462px;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+
 }
+
+.button__con:hover {
+  transform: scale(1.05); /* Slightly increase size */
+}
+
+.button__con:hover svg {
+  transform: translateX(5px); /* Slightly move the arrow to the right */
+}
+
 
 .icon-container {
   display: inline-flex;
@@ -207,12 +219,13 @@
 
 .our__service__section {
   padding: 96px;
-  overflow: hidden;
 }
 .our__service__con {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  overflow: hidden;
+
 }
 
 .service__title {
@@ -241,7 +254,28 @@
   align-content: flex-start;
   justify-content: flex-start;
   gap: 20px;
+  animation: scrollText 10s infinite linear;
+  white-space: nowrap;
+  overflow-x: auto;
+  transform: translateX(-50%); /* Center the content */
+  overflow: hidden;
+  width: 250%;
+
+
+
 }
+
+/* Define keyframes for the scrolling animation */
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
 .image_set img {
   width: 400px;
 }
@@ -315,7 +349,19 @@
   background: rgba(255, 255, 255, 0.14);
   backdrop-filter: blur(6.92307710647583px);
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
+
+
+.inside__image__text p:hover {
+  transform: scale(1.05); /* Slightly increase size */
+}
+
+.inside__image__text p:hover svg {
+  transform: translateX(5px); /* Slightly move the arrow to the right */
+}
+
 .arrow-icon-font-awesome2 {
   font-size: 40px; /* Adjust the size of the Font Awesome icon */
   color: rgb(0, 0, 0); /* Make the icon white */
