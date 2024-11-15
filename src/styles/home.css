@@ -1,3 +1,5 @@
+/***************************************** Hero section **********************************************************************************/
+
 .header__section {
   background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1731431491/bg_lnag0j.png");
   background-position: center;
@@ -26,26 +28,37 @@
   padding: 0 26rem 2rem;
 }
 
+/***************************************** Button section **********************************************************************************/
+
 .button {
+  display: flex;
+  justify-content: center;
+}
+.button__con {
+  display: flex;
   padding: 2rem 4rem;
   border-radius: 138.46px;
+  text-align: center;
   font-size: 20px;
   background: rgba(90, 104, 165, 0.13);
   backdrop-filter: blur(6.92307710647583px);
   border: none;
   font-weight: 500;
+  cursor: pointer;
 }
+
+/***************************************** Who we are section **********************************************************************************/
 
 .whoweare__section {
   background: var(--Dodger-Blue-50, #f5fdff);
-  padding: 96px;
+  padding: 6rem; /* Equivalent to 96px for better readability */
   border-radius: 40px 40px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 4rem; /* Equivalent to 64px */
   position: relative;
-  top: -30px;
+  transform: translateY(-2rem); /* Equivalent to -30px */
 }
 .whoweare h2 {
   color: var(--Shark-700, #4c4d58);
@@ -58,7 +71,9 @@
 }
 
 .whoweare p {
-  width: 15%;
+  width: 7rem;
+  display: flex;
+  align-items: center;
   color: var(--Dodger-Blue-800, #0870c5);
   font-size: 14px;
   font-weight: 500;
@@ -77,15 +92,14 @@
 }
 
 .img__con {
-  max-width: 100%; /* Ensures the container doesn't exceed the parent's width */
-  height: auto; /* Maintains aspect ratio */
+  max-width: 800px;
+  width: 100%;
 }
-
-img {
-  width: 100%; /* Ensures the image scales to the container's width */
-  height: auto; /* Maintains the image's aspect ratio */
-  object-fit: cover; /* Ensures the image fills the container */
-  border-radius: 8px; /* Adds a subtle rounding to corners */
+.img__con img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes any potential inline space below the image */
+  object-fit: cover; /* Adjusts how the image fits within the container */
 }
 
 .box {
@@ -120,41 +134,249 @@ img {
 .box_1 h6 {
   color: var(--Shark-700, #4c4d58);
   text-align: center;
-
-  /* Body Large Regular */
   font-family: Urbanist;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 24px */
+  line-height: 120%;
 }
 
-/* .comment__section {
+/***************************************** Comment section **********************************************************************************/
+
+.comment__section {
   padding: 96px;
 }
 
-.ourservice__section {
+.comment__con {
+  background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1731627045/comment_buybrw.png");
+  background-position: center;
+  background-size: cover;
   display: flex;
-  width: 1440px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 1280px;
+  height: 680px;
+  gap: 40px;
+  color: #f5fdff;
+  padding: 0 80px;
+}
+
+.comment__heading {
+  font-size: 72px;
+  font-weight: 400;
+}
+.comment__con p {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--Shark-50, #f7f7f8);
+}
+.comment__con img {
+  width: 10%;
+  height: auto;
+}
+
+/***************************************** Service section **********************************************************************************/
+
+.our__service__section {
+  padding: 96px ;
+  overflow: hidden;
+
+}
+.our__service__con {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+
+.service__title {
+  display: flex;
+  width: 100px;
+  font-weight: 500;
+  color: var(--Dodger-Blue-800, #0870c5);
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid var(--Blue-200, #b2ddff);
+  border-radius: 16px;
+  background: var(--Blue-50, #eff8ff);
+}
+
+.our__service__heading {
+  font-size: 40px;
+  margin-right: 400px;
+  font-weight: 400;
+  color: var(--Shark-700, #4c4d58);
+}
+.image_set {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+
+}
+.image_set img {
+  width: 400px;
+  
+}
+
+/***************************************** Destination section **********************************************************************************/
+
+.destination__section {
+  display: flex;
   padding: 96px 0px;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+}
+.destination__heading {
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--Shark-700, #4c4d58);
 }
 
-.ourservice__con {
+.destination__con {
   display: flex;
-  padding: 0px 32px;
-  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 90px;
+  align-items: flex-start;
   gap: 64px;
-} */
+}
+.destination__img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
 
-.faq__section {
+.image__con {
+  height: 480px; /* Adjust as needed */
+  width: 600px; /* Adjust as needed */
+  background-size: cover;
+  background-position: center;
+  margin: 10px; /* Adjust spacing as needed */
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.inside__image__text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 35px;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%; /* Adjust as needed */
+}
+
+.inside__image__text h1,
+.inside__image__text p {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 0.769px solid rgba(255, 255, 255, 0.26);
+  background: rgba(90, 104, 165, 0.13);
+  backdrop-filter: blur(6.92307710647583px);
+}
+
+/***************************************** Testimonial section **********************************************************************************/
+
+.testimonial__section {
   display: flex;
   padding: 96px 0px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 64px;
+}
+
+.testimonial__heading {
+  color: var(--Gray-900, #101828);
+  font-family: Urbanist;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 439px;
+}
+.testimonial__con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligns items vertically at the center */
+  width: 80%;
+}
+.testimonial__sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial__sub h2 {
+  width: 806px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--Gray-900, #101828);
+  margin-bottom: 40px;
+}
+
+.testimonial__cap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.testimonial__icon {
+  gap: 10px;
+}
+
+/***************************************** Footer section **********************************************************************************/
+
+.location__section {
+  display: flex;
+  padding: 96px 0px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.location__con {
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.location__sub {
+  margin-top: 80px;
+  border-top: 3px solid var(--Dodger-Blue-800, #0870c5);
+}
+
+.location__con h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--Gray-900, #101828);
+  margin-bottom: 60px;
+}
+
+.location__sub h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.location__sub p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: var(--Shark-500, #737584);
 }

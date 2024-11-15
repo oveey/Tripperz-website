@@ -46,7 +46,7 @@ const Faq = () => {
 
   return (
     <div className="faq__section">
-      <div className="faq__con">
+      <div className="faq__header">
         <h1>Frequently asked questions</h1>
         <p>Everything you need to know about the product and billing.</p>
       </div>
