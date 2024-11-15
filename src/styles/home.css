@@ -19,19 +19,21 @@
 }
 
 .header__text {
-  margin-top: 70px;
+  margin-top: 30px;
   font-size: 88px;
-  max-width: 1000px;
+  max-width: 900px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 110%; /* 96.8px */
 }
 
 .header__p {
-  font-size: 20px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
+  line-height: 120%; /* 28.8px */
 }
 
 /***************************************** Button section **********************************************************************************/
@@ -287,7 +289,7 @@
 .image__con {
   height: 480px; /* Adjust as needed */
   width: 100%;
-  max-width: 600px; /* Adjust as needed */
+  max-width: 520px; /* Adjust as needed */
   background-size: cover;
   margin: 10px; /* Adjust spacing as needed */
   border-radius: 8px;
