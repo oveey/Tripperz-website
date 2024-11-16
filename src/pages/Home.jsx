@@ -6,11 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 export const Home = () => {
   useEffect(() => {
@@ -144,7 +143,11 @@ export const Home = () => {
 
       <section className="our__service__section">
         <div className="our__service__con">
-          <div className="our__service" data-aos="fade-up"data-aos-duration="1000">
+          <div
+            className="our__service"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <p className="service__title">Our service</p>
             <h1 className="our__service__heading">
               Our comprehensive services are designed to cater to all your
@@ -152,7 +155,11 @@ export const Home = () => {
             </h1>
           </div>
 
-          <div className="image_set" data-aos="fade-up" data-aos-duration="3000">
+          <div
+            className="image_set"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <img src="./assets/Frame 1.png" alt="" />
             <img src="./assets/Frame 2.png" alt="" />
             <img src="./assets/Frame 3.png" alt="" />
@@ -175,12 +182,8 @@ export const Home = () => {
             {images.map((imageSet) => (
               <div
                 key={imageSet.key}
-                className={`image__con ${
-                  imageSet.key === "set3" ? "set3-style" : ""
-                }`}
-                style={{
-                  backgroundImage: `url(${imageSet.urls[0]})`,
-                }}
+                className={`image__con ${imageSet.key === "set3" ? "set3-style" : ""}`}
+                style={{ backgroundImage: `url(${imageSet.urls[0]})` }}
               >
                 <div className="inside__image__text">
                   <h1>{imageSet.mainT}</h1>
@@ -226,7 +229,6 @@ export const Home = () => {
             <img src="./assets/Stars.svg" alt="stars" />
             <span>•••••</span>
           </div>
-
         </div>
       </section>
       <Faq />
