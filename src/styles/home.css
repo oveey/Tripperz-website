@@ -43,6 +43,7 @@
 .button {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .button__con {
@@ -52,12 +53,14 @@
   background: rgba(90, 104, 165, 0.13);
   border: 1px solid rgba(255, 255, 255, 0.26);
   font-weight: 500;
+  color: #fff;
   font-size: 20px;
   backdrop-filter: blur(6.92307710647583px);
   cursor: pointer;
   border-radius: 138.462px;
   transition: background-color 0.3s ease, transform 0.3s ease,
     box-shadow 0.3s ease;
+    
 
 }
 
