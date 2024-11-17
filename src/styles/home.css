@@ -525,9 +525,8 @@
 
   .whoweare__section {
     padding: 1rem; /* Equivalent to 96px for better readability */
-    gap: 2rem; /* Equivalent to 64px */
-    transform: translateY(-20rem); /* Equivalent to -30px */
-    margin-bottom: 6rem;
+    transform: translateY(-10rem); /* Equivalent to -30px */
+    margin-bottom: 2px;
 
   }
   .whoweare h2 {

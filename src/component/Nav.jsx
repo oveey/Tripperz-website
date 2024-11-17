@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../styles/nav.css";
 
-
-
 export const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
@@ -33,52 +31,44 @@ export const Nav = () => {
     <>
       <div className="home__nav">
         <Link to="/">
-        <img src="./assets/tripperzway.svg" alt="logo" />
+          <img src="./assets/tripperzway.svg" alt="logo" />
         </Link>
 
-        <ul>
+        <ul className={`${isOpen ? "open" : ""}`}>
           <li>
             <NavLink to="/" className="nav_link">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about-us" className="nav_link">
+            <NavLink to="/" className="nav_link">
               About Us
             </NavLink>
           </li>
           <li>
-            <NavLink to="/service" className="nav_link">
+            <NavLink to="/" className="nav_link">
               FAQ
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="/portfolio" className="nav_link">
+            <NavLink to="/" className="nav_link">
               Contact
             </NavLink>
           </li>
 
-          
           <div className="dropdown">
             <span className="colors"></span>
-            <span className="colors"></span>
-            <span className="colors"></span>
-            <span className="colors"></span>
           </div>
-
         </ul>
 
-        <button
-          className={`${isOpen ? "menu" : ""}`}
-          onClick={toggleMenu}
-        >
-          <span></span>
-          <span></span>
-        </button>
+        <button className={`${isOpen ? "menu" : ""}`} onClick={toggleMenu}>
+          <span className="line top"></span>
+          <span className="line middle"></span>
+          <span className="line last"></span>
 
+        </button>
       </div>
     </>
   );
 };
-
