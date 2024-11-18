@@ -282,6 +282,7 @@ export const Home = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title="Map showing the location of Joy Good Mall, Sangotedo, Lagos, Nigeria"
           ></iframe>
           <div className="location__sub">
             <h2>Lagos</h2>
@@ -290,6 +291,7 @@ export const Home = () => {
               Park, Sangotedo, Lagos, Nigeria
             </p>
           </div>
+          
         </div>
       </section>
     </>
