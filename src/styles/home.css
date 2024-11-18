@@ -8,8 +8,6 @@
   margin-top: 0;
 }
 
-
-
 .header__inner__con {
   display: flex;
   flex-direction: column;
@@ -60,8 +58,6 @@
   border-radius: 138.462px;
   transition: background-color 0.3s ease, transform 0.3s ease,
     box-shadow 0.3s ease;
-    
-
 }
 
 .button__con:hover {
@@ -71,7 +67,6 @@
 .button__con:hover svg {
   transform: translateX(5px); /* Slightly move the arrow to the right */
 }
-
 
 .icon-container {
   display: inline-flex;
@@ -99,18 +94,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem; /* Equivalent to 64px */
-  position: relative;
   transform: translateY(-2rem); /* Equivalent to -30px */
 }
 .whoweare h2 {
   color: var(--Shark-700, #4c4d58);
-  font-family: Urbanist;
-  font-size: 40px;
+  font-size: 27px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 48px */
-  letter-spacing: -0.4px;
+  line-height: 120%;
+  margin-top: 2rem;
 }
 
 .whoweare p {
@@ -131,12 +123,13 @@
   display: flex;
   padding: 0px 32px;
   align-items: center;
-  gap: 64px;
+  justify-content: space-between;
+  gap: 74px;
 }
 
 .img__con {
   max-width: 800px;
-  width: 100%;
+  width: 200%;
 }
 .img__con img {
   width: 100%;
@@ -230,7 +223,6 @@
   flex-direction: column;
   gap: 40px;
   overflow: hidden;
-
 }
 
 .service__title {
@@ -265,9 +257,6 @@
   transform: translateX(-50%); /* Center the content */
   overflow: hidden;
   width: 250%;
-
-
-
 }
 
 /* Define keyframes for the scrolling animation */
@@ -279,7 +268,6 @@
     transform: translateX(-50%);
   }
 }
-
 
 .image_set img {
   width: 400px;
@@ -309,10 +297,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
 }
-
-
 
 .image__con {
   height: 480px; /* Adjust as needed */
@@ -324,14 +309,12 @@
   margin: 10px; /* Adjust spacing as needed */
   border-radius: 8px;
   color: white;
-
 }
 
 .set3-style {
   flex: 1 1 100%; /* Full width of the container */
   max-width: 100%;
 }
-
 
 .inside__image__text {
   display: flex;
@@ -366,7 +349,6 @@
     box-shadow 0.3s ease;
 }
 
-
 .inside__image__text p:hover {
   transform: scale(1.05); /* Slightly increase size */
 }
@@ -392,7 +374,6 @@
   padding: 96px;
   flex-direction: column;
   gap: 64px;
-  align-items: flex-start;
 }
 
 .testimonial__heading {
@@ -404,15 +385,20 @@
   line-height: 120%;
   width: 439px;
 }
+
 .testimonial__con {
   display: flex;
-  align-items: center; /* Aligns items vertically at the center */
+  align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
 
 .testimonial__con img {
   cursor: pointer;
+}
+
+.testimonial__swiper {
+  width: 100%;
+  height: 46vh;
 }
 
 .testimonial__sub {
@@ -420,12 +406,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 
 .testimonial__sub h2 {
-  width: 806px;
   text-align: center;
+  width: 1000px;
   font-size: 32px;
   font-weight: 400;
   color: var(--Gray-900, #101828);
@@ -518,19 +503,21 @@
   }
 
   .arrow-icon-font-awesome {
-    font-size: 60px; /* Adjust the size of the Font Awesome icon */
+    font-size: 60px;
   }
 
   /***************************************** Who we are section **********************************************************************************/
 
   .whoweare__section {
-    padding: 1rem; /* Equivalent to 96px for better readability */
-    transform: translateY(-10rem); /* Equivalent to -30px */
+    padding: 1rem;
+    transform: translateY(-10rem);
     margin-bottom: 2px;
-
+  }
+  .whoweare{
+    margin-top: 50px;
   }
   .whoweare h2 {
-    font-size: 32px;
+    font-size: 25px;
   }
 
   .whoweare p {
@@ -552,9 +539,9 @@
   }
   .img__con img {
     width: 100%;
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Removes any potential inline space below the image */
-    object-fit: cover; /* Adjusts how the image fits within the container */
+    height: auto;
+    display: block;
+    object-fit: cover;
   }
 
   .box {
@@ -582,21 +569,17 @@
 
   .box_1 h3 {
     font-size: 30px;
-
   }
 
   .box_1 h6 {
     font-size: 16px;
   }
 
-
-
   /***************************************** Comment section **********************************************************************************/
 
   .comment__section {
     padding: 16px;
     margin-bottom: 6rem;
-
   }
 
   .comment__con {
@@ -658,7 +641,6 @@
   .destination__section {
     padding: 16px;
     margin-bottom: 6rem;
-
   }
   .destination__heading {
     font-size: 32px;
@@ -677,7 +659,7 @@
   } */
 
   .image__con {
-    max-width: 347px; 
+    max-width: 347px;
   }
 
   .inside__image__text {
@@ -726,20 +708,16 @@
     padding: 16px;
     gap: 64px;
     margin-bottom: 6rem;
-
   }
 
   .testimonial__heading {
     font-size: 32px;
-    width: 300px;
+    width: 100%;
+
   }
 
   .testimonial__con {
-    display: flex;
-    align-items: center; /* Aligns items vertically at the center */
-    justify-content: space-between;
     flex-direction: column;
-    width: 100%;
     gap: 2rem;
   }
 
@@ -776,6 +754,17 @@
     gap: 10px;
   }
 
+  .testimonial__swiper {
+    width: 100%; /* Full width of the container */
+    margin: 20px auto; /* Center the Swiper and add vertical space */
+    max-width: 1200px; /* Optional: limit the max width for larger screens */
+  }
+
+  .testimonial__swiper {
+    width: 100%;
+    height: 56vh;
+  }
+
   /***************************************** Footer section **********************************************************************************/
 
   .location__section {
@@ -783,7 +772,6 @@
     text-align: center;
     align-items: center;
     gap: 64px;
-    
   }
 
   .location__con {

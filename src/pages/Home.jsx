@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect } from "react";
 import { Nav } from "../component/Nav";
 import Faq from "../component/Faq";
 import "../styles/home.css";
@@ -7,9 +7,9 @@ import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Autoplay, Pagination } from 'swiper/modules';
 
 export const Home = () => {
   useEffect(() => {
@@ -98,8 +98,12 @@ export const Home = () => {
           <div className="whoweare" data-aos="fade-up" data-aos-duration="3000">
             <p>Who we are </p>
             <h2>
-              We are a passionate travel agency that spent years helping people
-              explore the world.{" "}
+              Tripperz Way is a professional and trust worthy travel and tour
+              company that offers outstanding, swift and memorable travel
+              experience to travelers worldwide. Our vision is to become the
+              number one choice for individual and cooperate clients for their
+              travel experience by providing excellent customer service and
+              unforgettable travel memories.
             </h2>
             <div className="box">
               <div className="box_1">
@@ -182,7 +186,9 @@ export const Home = () => {
             {images.map((imageSet) => (
               <div
                 key={imageSet.key}
-                className={`image__con ${imageSet.key === "set3" ? "set3-style" : ""}`}
+                className={`image__con ${
+                  imageSet.key === "set3" ? "set3-style" : ""
+                }`}
                 style={{ backgroundImage: `url(${imageSet.urls[0]})` }}
               >
                 <div className="inside__image__text">
@@ -212,24 +218,52 @@ export const Home = () => {
           <h1 className="testimonial__heading">
             What Our Clients Say About Us
           </h1>
-          <img src="./assets/arrow.svg" alt="" />
+          <img src="./assets/arrow.svg" alt="Arrow" />
         </div>
-        <div
-          className="testimonial__sub"
-          data-aos="fade-up"
-          data-aos-duration="3000"
+
+        <Swiper
+          modules={[ Autoplay, Pagination ]}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          className="testimonial__swiper" data-aos="fade-up"
         >
-          <h2>
-            Love the simplicity of the service and the prompt customer support.
-            We can’t imagine working without it.
-          </h2>
-          <div className="testimonial__cap">
-            <h3>Caitlyn King</h3>
-            <p>Head of Design, Layers</p>
-            <img src="./assets/Stars.svg" alt="stars" />
-            <span>•••••</span>
-          </div>
-        </div>
+          <SwiperSlide>
+            <div className="testimonial__sub">
+              <h2>
+                I’ve worked with Tripperz Way multiple times and it has always
+                been a smooth experience. My standout moment from my experience
+                with Tripperz Way was when they curated a lovely tour for me and
+                my wife for our honeymoon in Zanzibar, I created memories that
+                I’ll never forget.
+              </h2>
+              <div className="testimonial__cap">
+                <h3>DR. JEREMIAH</h3>
+                <img src="./assets/Stars.svg" alt="stars" />
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="testimonial__sub">
+              <h2>
+                Right from the start, I’ve been a huge fan of Tripperz Way and
+                the swift and excellent customer service they offer. Most
+                recently, I attended a world class conference in Egypt through
+                their visa and tour service and it was a great experience
+              </h2>
+              <div className="testimonial__cap">
+                <h3> DR. VICTOR</h3>
+                <img src="./assets/Stars.svg" alt="stars" />
+              </div>
+            </div>
+          </SwiperSlide>
+
+        </Swiper>
       </section>
       <Faq />
 
