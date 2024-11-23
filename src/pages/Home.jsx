@@ -9,7 +9,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from "swiper/modules";
 
 export const Home = () => {
   useEffect(() => {
@@ -68,6 +68,53 @@ export const Home = () => {
     },
   ];
 
+  const teamImages = [
+    {
+      key: "set1",
+      mainT: "Toba Subair",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/1_oz3mzf.jpg",
+      ],
+      smallT: "Ceo/founder",
+    },
+
+    {
+      key: "set2",
+      mainT: "Christabel Obadaseraye",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/3_g0nirt.jpg",
+      ],
+      smallT: "Sales Officer",
+    },
+
+    {
+      key: "set3",
+      mainT: "Oyindamola Olaoye",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/9_bgsgys.jpg",
+      ],
+      smallT: "Sales Manager",
+    },
+
+    {
+      key: "set4",
+      mainT: "Zanas Emadamerho-Ator",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384911/2_b5fjou.jpg",
+      ],
+      smallT: "Digital Marketer/ Sales Officer",
+    },
+
+    {
+      key: "set5",
+      mainT: "Precious Effiong",
+      urls: [
+        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384914/8_movvxu.jpg",
+      ],
+      smallT: "Visa Officer",
+    },
+  ];
+
   return (
     <>
       <section className="header__section">
@@ -105,6 +152,7 @@ export const Home = () => {
               travel experience by providing excellent customer service and
               unforgettable travel memories.
             </h2>
+
             <div className="box">
               <div className="box_1">
                 <h3>3X</h3>
@@ -121,6 +169,7 @@ export const Home = () => {
                 <h6>Customer Satisfaction</h6>
               </div>
             </div>
+
           </div>
           <div className="img__con" data-aos="fade-up" data-aos-duration="3000">
             <img
@@ -222,7 +271,7 @@ export const Home = () => {
         </div>
 
         <Swiper
-          modules={[ Autoplay, Pagination ]}
+          modules={[Autoplay, Pagination]}
           spaceBetween={30}
           pagination={{
             clickable: true,
@@ -230,7 +279,8 @@ export const Home = () => {
           slidesPerView={1}
           loop={true}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
-          className="testimonial__swiper" data-aos="fade-up"
+          className="testimonial__swiper"
+          data-aos="fade-up"
         >
           <SwiperSlide>
             <div className="testimonial__sub">
@@ -262,8 +312,33 @@ export const Home = () => {
               </div>
             </div>
           </SwiperSlide>
-
         </Swiper>
+      </section>
+
+      <section className="team__section">
+        <div className="team__con" data-aos="fade-up" data-aos-duration="3000">
+          <h1 className="team__heading"> Meet the Team</h1>
+
+          <div className="team__img">
+            {teamImages.map((imageSet) => (
+              <div
+                key={imageSet.key}
+                className={`team__image__con ${
+                  imageSet.key === "set2" ? "set2-highlight" : ""
+                }`}
+                style={{ backgroundImage: `url(${imageSet.urls[0]})` }}
+              >
+                <div className="team__text">
+                  <div className="team__bg">
+                  <h1>{imageSet.mainT}</h1>
+                  <p>{imageSet.smallT}</p>
+                  </div>
+                
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
       <Faq />
 
@@ -291,7 +366,6 @@ export const Home = () => {
               Park, Sangotedo, Lagos, Nigeria
             </p>
           </div>
-          
         </div>
       </section>
     </>

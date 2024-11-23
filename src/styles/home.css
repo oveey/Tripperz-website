@@ -140,11 +140,13 @@
 
 .box {
   display: flex;
-  min-width: 240px;
-  gap: 28px;
-  flex: 1 0 0;
+  /* min-width: 240px;
+  flex: 1 ;
+  flex-wrap: wrap; */
   margin-top: 40px;
+  gap: 28px;
 }
+
 .box_1 {
   display: flex;
   padding: 16px 18px;
@@ -155,8 +157,10 @@
   border-radius: 8px;
   border: 1px solid var(--Shark-200, #d9d9de);
   height: 176px;
+  max-width: 400px;
   width: 100%;
 }
+
 .box_1 h3 {
   color: var(--Shark-800, #41414b);
   text-align: center;
@@ -398,7 +402,7 @@
 
 .testimonial__swiper {
   width: 100%;
-  height: 46vh;
+  height: 40vh;
 }
 
 .testimonial__sub {
@@ -427,6 +431,64 @@
 
 .testimonial__icon {
   gap: 10px;
+}
+
+/***************************************** Team section **********************************************************************************/
+
+.team__section {
+  padding: 96px;
+}
+
+.team__heading {
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--Shark-700, #4c4d58);
+}
+
+.team__con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.team__img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.team__image__con {
+  height: 400px; /* Adjust as needed */
+  width: calc(33.33% - 20px);
+  flex: 1 1 calc(50% - 10px); /* Each image takes 50% width minus the gap */
+  max-width: calc(
+    33.33% - 20px
+  ); /* Prevents exceeding a third of the container */
+  background-size: cover;
+  background-position: initial;
+  margin: 10px; /* Adjust spacing as needed */
+  color: white;
+  transition: box-shadow 0.3s ease;
+}
+
+.team__image__con:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+}
+
+.team__text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.team__bg{
+  padding: 16px;
+  backdrop-filter: blur(6.92307710647583px);
+  background: #00000033;
+  width: 100%;
+  
 }
 
 /***************************************** Footer section **********************************************************************************/
@@ -473,6 +535,212 @@
 }
 
 /***************************************** Media query **********************************************************************************/
+@media (max-width: 1200px) {
+  .header__section {
+    padding-bottom: 400px;
+  }
+
+  .header__inner__con {
+    gap: 2rem;
+  }
+
+  .header__text {
+    margin-top: 85px;
+    font-size: 50px;
+    max-width: 600px;
+    line-height: 120%; /* 57.6px */
+  }
+
+  .header__p {
+    font-size: 18px;
+    max-width: 480px;
+  }
+
+  /***************************************** Who we are section **********************************************************************************/
+
+  .whoweare__section {
+    padding: 30px;
+    transform: translateY(-10rem);
+    margin-bottom: 2px;
+  }
+  .whoweare__con {
+    flex-direction: column;
+  }
+
+  .img__con {
+    max-width: 800px;
+    width: 100%;
+  }
+  .img__con img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .box {
+    display: flex;
+    gap: 18px;
+    margin-top: 40px;
+  }
+
+  /***************************************** Comment section **********************************************************************************/
+
+  .comment__section {
+    padding: 30px;
+    margin-bottom: 6rem;
+  }
+
+  .comment__con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 480px;
+    gap: 20px;
+    padding: 0 90px;
+  }
+
+  .comment__heading {
+    font-size: 32px;
+  }
+  .comment__con p {
+    font-size: 16px;
+  }
+
+  .comment__con img {
+    width: 10%;
+    height: auto;
+  }
+
+  /***************************************** Service section **********************************************************************************/
+
+  .our__service__section {
+    padding: 30px;
+    overflow: hidden;
+    margin-bottom: 6rem;
+  }
+  .our__service__con {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .service__title {
+    margin-bottom: 20px;
+  }
+
+  .our__service__heading {
+    font-size: 32px;
+    margin-right: 6px;
+  }
+  .image_set {
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .image_set img {
+    width: 300px;
+  }
+
+  /***************************************** Destination section **********************************************************************************/
+
+  .destination__section {
+    padding: 30px;
+    margin-bottom: 6rem;
+  }
+  .destination__heading {
+    font-size: 40px;
+  }
+
+  .image__con {
+    max-width: 457px;
+    width: 100%;
+  }
+
+  /***************************************** Testimonial section **********************************************************************************/
+
+  .testimonial__section {
+    padding: 30px;
+    gap: 64px;
+    margin-bottom: 6rem;
+  }
+
+  .testimonial__heading {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .testimonial__con {
+    gap: 2rem;
+  }
+
+  .testimonial__con img {
+    width: 20%;
+  }
+
+  .testimonial__sub h2 {
+    width: 606px;
+  }
+
+  .testimonial__cap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .testimonial__icon {
+    gap: 10px;
+  }
+
+  .testimonial__swiper {
+    width: 100%; /* Full width of the container */
+    margin: 20px auto; /* Center the Swiper and add vertical space */
+    max-width: 1200px; /* Optional: limit the max width for larger screens */
+  }
+
+  .testimonial__swiper {
+    width: 100%;
+    height: 30vh;
+  }
+
+  /***************************************** Team section **********************************************************************************/
+
+  .team__section {
+    padding: 30px;
+    margin-bottom: 150px;
+  }
+
+  .team__heading {
+    font-size: 40px;
+  }
+
+  .team__con {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .team__img {
+    width: 100%;
+  }
+
+  .team__image__con {
+    height: 400px;
+    width: 100%;
+    max-width: calc(50% - 20px);
+    margin: 10px; /* Adjust spacing as needed */
+  }
+
+  /***************************************** Footer section **********************************************************************************/
+
+  .location__section {
+    padding: 30px;
+  }
+}
 
 @media (max-width: 768px) {
   .header__section {
@@ -513,7 +781,7 @@
     transform: translateY(-10rem);
     margin-bottom: 2px;
   }
-  .whoweare{
+  .whoweare {
     margin-top: 50px;
   }
   .whoweare h2 {
@@ -713,7 +981,6 @@
   .testimonial__heading {
     font-size: 32px;
     width: 100%;
-
   }
 
   .testimonial__con {
@@ -764,6 +1031,37 @@
     width: 100%;
     height: 56vh;
   }
+
+  .team__section {
+    padding: 16px;
+    margin-bottom: 130px;
+  }
+
+  .team__heading {
+    font-size: 32px;
+  }
+
+  .team__con {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .team__img {
+    width: 100%;
+  }
+  .team__text h1 {
+    font-size: 20px;
+  }
+
+  .team__image__con {
+    height: 400px;
+    width: 100%;
+    max-width: 500px; /* Prevents exceeding a third of the container */
+    margin: 10px; /* Adjust spacing as needed */
+  }
+
+  
+  
 
   /***************************************** Footer section **********************************************************************************/
 

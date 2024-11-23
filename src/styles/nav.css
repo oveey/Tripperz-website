@@ -14,10 +14,15 @@
 
 .home__nav ul {
   display: flex;
-  justify-content: space-between;
-  width: 30%;
   cursor: pointer;
+  gap: 3rem;
+  width: 100%;
+  justify-content: flex-end;
+  
+
 }
+
+
 
 .nav_link {
   color: #fff;
@@ -31,6 +36,15 @@
 
 .home__nav button {
   display: none;
+}
+
+@media (max-width: 1200px) {
+
+  .home__nav {
+    padding: 20px 30px;
+  
+  }
+
 }
 
 @media (max-width: 900px) {
