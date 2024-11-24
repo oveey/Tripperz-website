@@ -4,20 +4,19 @@
   align-items: center;
   position: sticky;
   padding: 20px 150px;
-  cursor: pointer;
   z-index: 2000;
   top: 0;
   font-size: 20px;
   font-weight: 500;
-  cursor: pointer;
 }
 
 .home__nav ul {
   display: flex;
   cursor: pointer;
+  align-items: flex-end;
   gap: 3rem;
-  width: 100%;
-  justify-content: flex-end;
+  align-content: flex-end;
+  
   
 
 }
@@ -57,12 +56,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     padding: 20px 16px;
     z-index: 2000;
-    top: 0;
-    font-size: 20px;
-    font-weight: 500;
+
+ 
   }
 
 

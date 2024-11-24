@@ -80,7 +80,7 @@ export const Home = () => {
 
     {
       key: "set2",
-      mainT: "Christabel Obadaseraye",
+      mainT: "Oyindamola Olaoye",
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/3_g0nirt.jpg",
       ],
@@ -89,7 +89,7 @@ export const Home = () => {
 
     {
       key: "set3",
-      mainT: "Oyindamola Olaoye",
+      mainT: "Zanas Emadamerho-Ator",
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/9_bgsgys.jpg",
       ],
@@ -98,7 +98,7 @@ export const Home = () => {
 
     {
       key: "set4",
-      mainT: "Zanas Emadamerho-Ator",
+      mainT: "Christabel Obadaseraye",
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384911/2_b5fjou.jpg",
       ],
@@ -117,7 +117,7 @@ export const Home = () => {
 
   return (
     <>
-      <section className="header__section">
+      <section className="header__section" id="home">
         <Nav />
 
         <div className="header__inner__con " data-aos="zoom-in-down">
@@ -140,7 +140,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="whoweare__section">
+      <section className="whoweare__section" id="who">
         <div className="whoweare__con">
           <div className="whoweare" data-aos="fade-up" data-aos-duration="3000">
             <p>Who we are </p>
@@ -342,7 +342,7 @@ export const Home = () => {
       </section>
       <Faq />
 
-      <section className="location__section">
+      <section className="location__section" id="location">
         <div
           className="location__con"
           data-aos="fade-up"

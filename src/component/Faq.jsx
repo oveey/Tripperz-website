@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"; 
 import "../styles/faq.css";
 
 const Faq = () => {
@@ -35,7 +36,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="faq__section">
+    <div className="faq__section" id="faq">
       <div className="faq__header" data-aos="fade-up" data-aos-duration="3000">
         <h1>Frequently asked questions</h1>
         <p>Everything you need to know about the product and billing.</p>

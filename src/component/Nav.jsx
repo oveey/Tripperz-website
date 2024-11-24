@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"; 
 import "../styles/nav.css";
 
 export const Nav = () => {
@@ -36,25 +37,25 @@ export const Nav = () => {
 
         <ul className={`${isOpen ? "open" : ""}`}>
           <li>
-            <NavLink to="/" className="nav_link">
+            <ScrollLink to="home" className="nav_link">
               Home
-            </NavLink>
+            </ScrollLink>
           </li>
           <li>
-            <NavLink to="/" className="nav_link">
+            <ScrollLink to="who" className="nav_link">
               About Us
-            </NavLink>
+            </ScrollLink>
           </li>
           <li>
-            <NavLink to="/" className="nav_link">
+            <ScrollLink to="faq" className="nav_link">
               FAQ
-            </NavLink>
+            </ScrollLink>
           </li>
 
           <li>
-            <NavLink to="/" className="nav_link">
+            <ScrollLink to="location" className="nav_link">
               Contact
-            </NavLink>
+            </ScrollLink>
           </li>
 
           <div className="dropdown">
