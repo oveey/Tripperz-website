@@ -4,6 +4,22 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import "../styles/nav.css";
 
 export const Nav = () => {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
 
@@ -30,7 +46,7 @@ export const Nav = () => {
 
   return (
     <>
-      <div className="home__nav">
+      <div className={`home__nav ${isScrolled ? "scrolled" : ""}`}>
         <Link to="/">
           <img src="./assets/tripperzway.svg" alt="logo" />
         </Link>
@@ -52,15 +68,16 @@ export const Nav = () => {
             </ScrollLink>
           </li>
 
-          <li>
+
+          <li className="nav-button">
             <ScrollLink to="location" className="nav_link">
-              Contact
+              Contact Us
             </ScrollLink>
           </li>
 
-          <div className="dropdown">
+          {/* <div className="dropdown">
             <span className="colors"></span>
-          </div>
+          </div> */}
         </ul>
 
         <button className={`${isOpen ? "menu" : ""}`} onClick={toggleMenu}>

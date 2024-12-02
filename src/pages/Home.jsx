@@ -7,8 +7,10 @@ import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from 'react-router-dom';
 import { Autoplay, Pagination } from "swiper/modules";
 
 export const Home = () => {
@@ -89,7 +91,7 @@ export const Home = () => {
 
     {
       key: "set3",
-      mainT: "Zanas Emadamerho-Ator",
+      mainT: "Christabel Obadaseraye",
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/9_bgsgys.jpg",
       ],
@@ -98,7 +100,7 @@ export const Home = () => {
 
     {
       key: "set4",
-      mainT: "Christabel Obadaseraye",
+      mainT: "Zanas Emadamerho-Ator",
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384911/2_b5fjou.jpg",
       ],
@@ -126,7 +128,7 @@ export const Home = () => {
             We are a passionate travel agency that spent years helping people
             explore the world.
           </p>
-          <div className="button">
+          <ScrollLink to="destination" className="button">
             <button className="button__con">
               Explore Now
               <span className="icon-container">
@@ -136,7 +138,7 @@ export const Home = () => {
                 />
               </span>
             </button>
-          </div>
+          </ScrollLink>
         </div>
       </section>
 
@@ -169,7 +171,6 @@ export const Home = () => {
                 <h6>Customer Satisfaction</h6>
               </div>
             </div>
-
           </div>
           <div className="img__con" data-aos="fade-up" data-aos-duration="3000">
             <img
@@ -223,7 +224,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="destination__section">
+      <section className="destination__section" id="explore">
         <div
           className="destination__con"
           data-aos="fade-up"
@@ -242,15 +243,17 @@ export const Home = () => {
               >
                 <div className="inside__image__text">
                   <h1>{imageSet.mainT}</h1>
+                  <Link to="/explore" className="explore-button">
                   <p>
-                    {imageSet.smallT}{" "}
-                    <span className="icon-container2">
-                      <FontAwesomeIcon
-                        icon={faCircleArrowRight}
-                        className="arrow-icon-font-awesome2"
-                      />
-                    </span>
-                  </p>
+                      {imageSet.smallT}{" "}
+                      <span className="icon-container2">
+                        <FontAwesomeIcon
+                          icon={faCircleArrowRight}
+                          className="arrow-icon-font-awesome2"
+                        />
+                      </span>
+                    </p>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -330,10 +333,9 @@ export const Home = () => {
               >
                 <div className="team__text">
                   <div className="team__bg">
-                  <h1>{imageSet.mainT}</h1>
-                  <p>{imageSet.smallT}</p>
+                    <h1>{imageSet.mainT}</h1>
+                    <p>{imageSet.smallT}</p>
                   </div>
-                
                 </div>
               </div>
             ))}
