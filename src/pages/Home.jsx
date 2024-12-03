@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from "swiper/modules";
 
 export const Home = () => {
@@ -20,7 +20,10 @@ export const Home = () => {
       easing: "ease-in-out", // Easing for animation
       startEvent: "DOMContentLoaded", // Trigger animations when the DOM is fully loaded
       offset: 120, // Adjust this value as needed
+      once: true, // Animation will run only once
+
     });
+
   }, []);
 
   const images = [
@@ -128,7 +131,7 @@ export const Home = () => {
             We are a passionate travel agency that spent years helping people
             explore the world.
           </p>
-          <ScrollLink to="destination" className="button">
+          <ScrollLink to="explore" className="button">
             <button className="button__con">
               Explore Now
               <span className="icon-container">
@@ -244,7 +247,7 @@ export const Home = () => {
                 <div className="inside__image__text">
                   <h1>{imageSet.mainT}</h1>
                   <Link to="/explore" className="explore-button">
-                  <p>
+                    <p>
                       {imageSet.smallT}{" "}
                       <span className="icon-container2">
                         <FontAwesomeIcon

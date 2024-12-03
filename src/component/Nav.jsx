@@ -66,6 +66,12 @@ export const Nav = () => {
               FAQ
             </ScrollLink>
           </li>
+
+          <li className="nav-button2">
+            <ScrollLink to="location" className="nav_link">
+              Contact Us
+            </ScrollLink>
+          </li>
         </ul>
 
         <li className="nav-button">
