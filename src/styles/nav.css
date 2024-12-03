@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  padding: 10px 150px;
+  padding: 10px 80px;
   z-index: 2000;
   top: 0;
   font-size: 20px;
@@ -29,7 +29,7 @@
   gap: 3rem;
   align-content: flex-end;
   color: #ffffff;
-  width: 100%;
+  /* width: 100%; */
   justify-content: flex-end;
 }
 
@@ -42,7 +42,7 @@
   border-radius: 138.462px;
   padding: 16px 32px;
   color: #000000;
-  margin-left: 200px;
+  /* margin-left: 200px; */
 
 }
 .nav-button:hover{
@@ -81,6 +81,8 @@
     padding: 20px 16px;
     z-index: 2000;
   }
+
+
 
  
 

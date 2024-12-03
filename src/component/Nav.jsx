@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"; 
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import "../styles/nav.css";
 
 export const Nav = () => {
-
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -67,24 +66,18 @@ export const Nav = () => {
               FAQ
             </ScrollLink>
           </li>
-
-
-          <li className="nav-button">
-            <ScrollLink to="location" className="nav_link">
-              Contact Us
-            </ScrollLink>
-          </li>
-
-          {/* <div className="dropdown">
-            <span className="colors"></span>
-          </div> */}
         </ul>
+
+        <li className="nav-button">
+          <ScrollLink to="location" className="nav_link">
+            Contact Us
+          </ScrollLink>
+        </li>
 
         <button className={`${isOpen ? "menu" : ""}`} onClick={toggleMenu}>
           <span className="line top"></span>
           <span className="line middle"></span>
           <span className="line last"></span>
-
         </button>
       </div>
     </>
