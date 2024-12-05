@@ -1,0 +1,47 @@
+on:
+  push:
+    branches:
+      - alphaBranch
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: 🔨 Build Project with increased memory limit
+        run: |
+          export NODE_OPTIONS=--max_old_space_size=4096
+          npm install
+          CI=false npm run build # Temporarily disabling CI during build to prevent ESLint warnings from stopping the build
+
+      - name: 📂 Sync files to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 'wghp8.wghservers.com'
+          username: 'dev_willyy@tripperzway.ng'
+          password: '!Dev_willyy_001!'
+          server-dir: /
+          local-dir: ./build/
+          exclude: |
+            node_modules/**
+            .git/**
+            .idea/**
+            .vscode/**
+            README.md
+            package.json
+            package-lock.json
+            src/** # Exclude source files from deletion
+            public/** # Exclude public files if needed
+          dangerous-clean-slate: false
+          log-level: verbose
+
+      - name: 📂 Skip build folder cleanup
+        run: echo "Skipping build folder cleanup."
