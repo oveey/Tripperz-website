@@ -77,11 +77,11 @@
   display: none;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .home__nav {
     padding: 20px 30px;
   }
-}
+} */
 
 @media (max-width: 900px) {
   .link {
