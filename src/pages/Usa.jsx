@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
-import { Nav } from "../component/Nav";
 import "../styles/explore.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 
 export const Usa = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // Animation duration (milliseconds)
-      easing: "ease-in-out", // Easing for animation
-      startEvent: "DOMContentLoaded", // Trigger animations when the DOM is fully loaded
-      offset: 120, // Adjust this value as needed
-      once: true, // Animation will run only once
+      duration: 1000, 
+      easing: "ease-in-out",
+      startEvent: "DOMContentLoaded", 
+      offset: 120, 
+      once: true, 
     });
   }, []);
 
@@ -19,40 +18,32 @@ export const Usa = () => {
     {
       key: "set1",
       mainT: "USA",
-      urls: [
-        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620546/Travel_1_p4v7sm.png",
-      ],
+      urls: ["https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620546/Travel_1_p4v7sm.png"],
       header: "USA",
       subtext:
         "The USA is a land of diverse attractions, from bustling cities to natural wonders. It’s a melting pot of cultures, with vibrant arts, film, and music scenes.",
     },
-
     {
       key: "set2",
-      mainT: "United kingdom",
-      urls: [
-        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620533/Travel_2_dxfpkq.png",
-      ],
-      header: "USA",
+      mainT: "United Kingdom",
+      urls: ["https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620533/Travel_2_dxfpkq.png"],
+      header: "United Kingdom",
       subtext:
-        "The USA is a land of diverse attractions, from bustling cities to natural wonders. It’s a melting pot of cultures, with vibrant arts, film, and music scenes.",
+        "The United Kingdom boasts historical landmarks, rich culture, and vibrant cities like London. It’s a blend of tradition and modernity.",
     },
-
     {
       key: "set3",
       mainT: "Canada",
-      urls: [
-        "https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620555/Travel_3_gcpv8h.png",
-      ],
-      header: "USA",
+      urls: ["https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620555/Travel_3_gcpv8h.png"],
+      header: "Canada",
       subtext:
-        "Canada is celebrated for its high quality of life, stunning natural landscapes, and welcoming attitude towards immigrants. It’s a haven for adventure seekers and nature lovers alike.",
+        "Canada is celebrated for its high quality of life, stunning natural landscapes, and welcoming attitude towards immigrants.",
     },
   ];
 
+
   return (
     <>
-      <Nav />
 
       <section className="explore__section">
         <div className="explore__inner__con " data-aos="zoom-in-down">
@@ -195,7 +186,6 @@ export const Usa = () => {
         <div
           className="other__destination__con"
           data-aos="fade-up"
-          data-aos-duration="3000"
         >
           <h1 className="other__destination__heading">Top Destinations</h1>
 
@@ -204,7 +194,9 @@ export const Usa = () => {
               <div key={imageSet.key} className="image__conn-container">
                 {/* Image Background */}
                 <div
-                  className={`image__conn ${imageSet.key === "set3"}`}
+                  className={`image__conn ${
+                    imageSet.key === "set3" ? "highlight" : ""
+                  }`}
                   style={{ backgroundImage: `url(${imageSet.urls[0]})` }}
                 >
                   <div className="inside__image__text">

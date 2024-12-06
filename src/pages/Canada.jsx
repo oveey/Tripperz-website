@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Nav } from "../component/Nav";
 import "../styles/explore.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
@@ -7,7 +6,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 export const Canada = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // Animation duration (milliseconds)
+      duration: 1000, // Animation duration (milliseconds)
       easing: "ease-in-out", // Easing for animation
       startEvent: "DOMContentLoaded", // Trigger animations when the DOM is fully loaded
       offset: 120, // Adjust this value as needed
@@ -52,7 +51,6 @@ export const Canada = () => {
 
   return (
     <>
-      <Nav />
 
       <section className="explore__section">
         <div className="explore__inner__con " data-aos="zoom-in-down">

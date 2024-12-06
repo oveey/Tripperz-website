@@ -12,12 +12,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from "swiper/modules";
-// import { useParams } from "react-router-dom";
+
 
 export const Home = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // Animation duration (milliseconds)
+      duration: 1000, // Animation duration (milliseconds)
       easing: "ease-in-out", // Easing for animation
       startEvent: "DOMContentLoaded", // Trigger animations when the DOM is fully loaded
       offset: 120, // Adjust this value as needed
@@ -174,7 +174,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="img__con" data-aos="fade-up" data-aos-duration="3000">
+          <div className="img__con" data-aos="fade-up">
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1731431498/whoweare_ldy0do.png"
               alt="a woman holding a phone up"
@@ -187,7 +187,6 @@ export const Home = () => {
         <div
           className="comment__con"
           data-aos="fade-up"
-          data-aos-duration="3000"
         >
           <img src="/assets/Number.svg" alt="Number" />
           <h1 className="comment__heading">
@@ -226,44 +225,7 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* <section className="destination__section" id="explore">
-        <div
-          className="destination__con"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-        >
-          <h1 className="destination__heading">Top Destinations</h1>
-
-          <div className="destination__img">
-            {images.map((imageSet) => (
-              <div
-                key={imageSet.key}
-                className={`image__con ${
-                  imageSet.key === "set3" ? "set3-style" : ""
-                }`}
-                style={{ backgroundImage: `url(${imageSet.urls[0]})` }}
-              >
-                <div className="inside__image__text">
-                  <h1>{imageSet.mainT}</h1>
-                  <Link to="/explore" className="explore-button">
-                    <p>
-                      {imageSet.smallT}{" "}
-                      <span className="icon-container2">
-                        <FontAwesomeIcon
-                          icon={faCircleArrowRight}
-                          className="arrow-icon-font-awesome2"
-                        />
-                      </span>
-                    </p>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       
-      </section> */}
-
       <section className="destination__section" id="explore">
         <div
           className="destination__con"
@@ -285,14 +247,12 @@ export const Home = () => {
                     to={
                       imageSet.mainT === "USA"
                         ? "/usa"
-                        : imageSet.mainT === "United kingdom"
-                        ? "/uk"
                         : imageSet.mainT === "Canada"
                         ? "/canada"
                         : imageSet.mainT === "Australia"
                         ? "/australia"
                         : imageSet.mainT === "SouthAfrica"
-                        ? "/south-africa"
+                        ? "/SouthAfrica"
                         : `/explore/${imageSet.key}`
                     }
                     className="explore-button"
@@ -318,7 +278,6 @@ export const Home = () => {
         <div
           className="testimonial__con"
           data-aos="fade-up"
-          data-aos-duration="3000"
         >
           <h1 className="testimonial__heading">
             What Our Clients Say About Us

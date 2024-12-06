@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Nav } from "../component/Nav";
 import "../styles/explore.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
@@ -7,7 +6,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 export const SouthAfrica = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // Animation duration (milliseconds)
+      duration: 1000, // Animation duration (milliseconds)
       easing: "ease-in-out", // Easing for animation
       startEvent: "DOMContentLoaded", // Trigger animations when the DOM is fully loaded
       offset: 120, // Adjust this value as needed
@@ -33,7 +32,7 @@ export const SouthAfrica = () => {
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620533/Travel_2_dxfpkq.png",
       ],
-      header: "USA",
+      header: "UK",
       subtext:
         "The USA is a land of diverse attractions, from bustling cities to natural wonders. It’s a melting pot of cultures, with vibrant arts, film, and music scenes.",
     },
@@ -44,7 +43,7 @@ export const SouthAfrica = () => {
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620555/Travel_3_gcpv8h.png",
       ],
-      header: "USA",
+      header: "Canada",
       subtext:
         "Canada is celebrated for its high quality of life, stunning natural landscapes, and welcoming attitude towards immigrants. It’s a haven for adventure seekers and nature lovers alike.",
     },
@@ -52,7 +51,6 @@ export const SouthAfrica = () => {
 
   return (
     <>
-      <Nav />
 
       <section className="explore__section">
         <div className="explore__inner__con " data-aos="zoom-in-down">
