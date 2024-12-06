@@ -3,6 +3,7 @@ import "../styles/explore.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
+
 export const SouthAfrica = () => {
   useEffect(() => {
     AOS.init({
