@@ -68,16 +68,16 @@ export const Nav = () => {
           </li>
 
           <li className="nav-button2">
-            <ScrollLink to="location" className="nav_link">
+            <a href="https://mainstack.me/tripperzway" className="nav_link">
               Contact Us
-            </ScrollLink>
+            </a>
           </li>
         </ul>
 
         <li className="nav-button">
-          <ScrollLink to="location" className="nav_link">
+          <a href="https://mainstack.me/tripperzway" className="nav_link">
             Contact Us
-          </ScrollLink>
+          </a>
         </li>
 
         <button className={`${isOpen ? "menu" : ""}`} onClick={toggleMenu}>

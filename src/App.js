@@ -1,21 +1,40 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Home } from "../src/pages/Home";
-import { Explore } from "../src/pages/Explore";
+import { Home } from "./pages/Home";
+import { Explore } from "./pages/Explore";
+// import Nav from "./component/Nav";
+import { Usa } from "./pages/Usa";
+import { Canada } from "./pages/Canada";
+import { SouthAfrica } from "./pages/SouthAfrica";
+import { Australia } from "./pages/Australia";
+
 
 
 const App = () => {
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/explore" element={<Explore />} />
+    <Router>
+      {/* <Nav /> */}
+      <Routes>
+        {/* Home route */}
+        <Route path="/" element={<Home />} />
 
-        </Routes>
-      </Router>
-    </>
+          {/* Explore page with dynamic parameter */}
+          <Route path="/usa/:key" element={<Usa />} />
+        
+        {/* Explore page with dynamic parameter */}
+        <Route path="/explore/:key" element={<Explore />} />
+        
+        {/* USA page */}
+        <Route path="/canada/:key" element={<Canada />} />
+        {/* USA page */}
+        <Route path="/sourhAfrica/:key" element={<SouthAfrica />} />
+        {/* USA page */}
+        <Route path="/australia/:key" element={<Australia />} />
+    
+      </Routes>
+    </Router>
   );
 };
 
 export default App;
+
