@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { Nav } from "../component/Nav";
-import { Link } from "react-router-dom";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import "../styles/explore.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles

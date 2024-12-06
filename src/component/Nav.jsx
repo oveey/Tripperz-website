@@ -68,14 +68,24 @@ export const Nav = () => {
           </li>
 
           <li className="nav-button2">
-            <a href="https://mainstack.me/tripperzway" className="nav_link">
+            <a
+              href="https://mainstack.me/tripperzway"
+              className="nav_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Contact Us
             </a>
           </li>
         </ul>
 
         <li className="nav-button">
-          <a href="https://mainstack.me/tripperzway" className="nav_link">
+          <a
+            href="https://mainstack.me/tripperzway"
+            className="nav_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Contact Us
           </a>
         </li>

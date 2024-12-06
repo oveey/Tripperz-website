@@ -264,45 +264,55 @@ export const Home = () => {
       
       </section> */}
 
-      <div className="destination__img">
-        {images.map((imageSet) => (
-          <div
-            key={imageSet.key}
-            className="image__con"
-            style={{ backgroundImage: `url(${imageSet.urls[0]})` }}
-          >
-            <div className="inside__image__text">
-              <h1>{imageSet.mainT}</h1>
-              <Link
-                to={
-                  imageSet.mainT === "USA"
-                    ? "/usa"
-                    : imageSet.mainT === "United kingdom"
-                    ? "/uk"
-                    : imageSet.mainT === "Canada"
-                    ? "/canada"
-                    : imageSet.mainT === "Australia"
-                    ? "/australia"
-                    : imageSet.mainT === "SouthAfrica"
-                    ? "/south-africa"
-                    : `/explore/${imageSet.key}`
-                }
-                className="explore-button"
+      <section className="destination__section" id="explore">
+        <div
+          className="destination__con"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <h1 className="destination__heading">Top Destinations</h1>
+
+          <div className="destination__img">
+            {images.map((imageSet) => (
+              <div
+                key={imageSet.key}
+                className="image__con"
+                style={{ backgroundImage: `url(${imageSet.urls[0]})` }}
               >
-                <p>
-                  {imageSet.smallT}{" "}
-                  <span className="icon-container2">
-                    <FontAwesomeIcon
-                      icon={faCircleArrowRight}
-                      className="arrow-icon-font-awesome2"
-                    />
-                  </span>
-                </p>
-              </Link>
-            </div>
+                <div className="inside__image__text">
+                  <h1>{imageSet.mainT}</h1>
+                  <Link
+                    to={
+                      imageSet.mainT === "USA"
+                        ? "/usa"
+                        : imageSet.mainT === "United kingdom"
+                        ? "/uk"
+                        : imageSet.mainT === "Canada"
+                        ? "/canada"
+                        : imageSet.mainT === "Australia"
+                        ? "/australia"
+                        : imageSet.mainT === "SouthAfrica"
+                        ? "/south-africa"
+                        : `/explore/${imageSet.key}`
+                    }
+                    className="explore-button"
+                  >
+                    <p>
+                      {imageSet.smallT}{" "}
+                      <span className="icon-container2">
+                        <FontAwesomeIcon
+                          icon={faCircleArrowRight}
+                          className="arrow-icon-font-awesome2"
+                        />
+                      </span>
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      </section>
 
       <section className="testimonial__section">
         <div
