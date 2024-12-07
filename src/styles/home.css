@@ -7,6 +7,8 @@
   padding-bottom: 250px;
 }
 
+
+
 .header__inner__con {
   display: flex;
   flex-direction: column;
@@ -132,16 +134,13 @@
 }
 .img__con img {
   width: 100%;
-  height: auto; /* Maintains aspect ratio */
-  display: block; /* Removes any potential inline space below the image */
-  object-fit: cover; /* Adjusts how the image fits within the container */
+  height: auto; 
+  display: block; 
+  object-fit: cover; 
 }
 
 .box {
   display: flex;
-  /* min-width: 240px;
-  flex: 1 ;
-  flex-wrap: wrap; */
   margin-top: 40px;
   gap: 28px;
 }
@@ -167,7 +166,7 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 48px */
+  line-height: 120%;
 }
 
 .box_1 h6 {
@@ -308,21 +307,28 @@
 }
 
 .image__con {
-  height: 480px; /* Adjust as needed */
+  height: 480px;
   width: 100%;
-  flex: 1 1 calc(50% - 10px); /* Each image takes 50% width minus the gap */
-  max-width: calc(50% - 20px); /* Prevents exceeding half the container width */
+  flex: 1 1 calc(50% - 10px); 
+  max-width: calc(50% - 20px); 
   background-size: cover;
-  background-position: center; /* Ensures the image is centered */
-  margin: 10px; /* Adjust spacing as needed */
+  background-position: center;
+  margin: 10px; 
   border-radius: 8px;
   color: white;
 }
 
-.set3-style {
-  flex: 1 1 100%; /* Full width of the container */
+/* .set3-style {
+  flex: 1 1 100%; 
   max-width: 100%;
+} */
+
+.south-africa-style {
+  flex: 1 1 100%; 
+  max-width: 100%;
+  
 }
+
 
 .inside__image__text {
   display: flex;
@@ -332,7 +338,7 @@
   padding: 30px 35px;
   justify-content: space-between;
   align-items: flex-start;
-  height: 100%; /* Adjust as needed */
+  height: 100%; 
 }
 
 .inside__image__text h1 {
@@ -1109,3 +1115,5 @@
     color: var(--Shark-500, #737584);
   } */
 }
+
+

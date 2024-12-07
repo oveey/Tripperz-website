@@ -2,17 +2,18 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Explore } from "./pages/Explore";
+import { Uk } from "./pages/Uk";
 import { Nav } from "./component/Nav";
 import { Usa } from "./pages/Usa";
 import { Canada } from "./pages/Canada";
 import { SouthAfrica } from "./pages/SouthAfrica";
 import { Australia } from "./pages/Australia";
-import ScrollToTop from "./ScrollToTop"; // Import the ScrollToTop component
+import ScrollToTop from "./ScrollToTop"; 
 
 const App = () => {
   return (
     <Router>
-      <ScrollToTop /> {/* Ensure this is added here */}
+      <ScrollToTop />
       <Nav />
       <Routes>
         {/* Home route */}
@@ -24,11 +25,14 @@ const App = () => {
         {/* USA page */}
         <Route path="/usa" element={<Usa />} />
 
+        {/* USA page */}
+        <Route path="/uk" element={<Uk />} />
+
         {/* Canada page */}
         <Route path="/canada" element={<Canada />} />
 
         {/* South Africa page */}
-        <Route path="/southAfrica" element={<SouthAfrica />} />
+        <Route path="/SouthAfrica" element={<SouthAfrica />} />
 
         {/* Australia page */}
         <Route path="/australia" element={<Australia />} />

@@ -21,20 +21,20 @@ export const Australia = () => {
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620546/Travel_1_p4v7sm.png",
       ],
-      header: "USA",
+      header: "United state of America",
       subtext:
         "The USA is a land of diverse attractions, from bustling cities to natural wonders. It’s a melting pot of cultures, with vibrant arts, film, and music scenes.",
     },
 
     {
       key: "set2",
-      mainT: "United kingdom",
+      mainT: "UK",
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620533/Travel_2_dxfpkq.png",
       ],
-      header: "USA",
+      header: "United Kingdom",
       subtext:
-        "The USA is a land of diverse attractions, from bustling cities to natural wonders. It’s a melting pot of cultures, with vibrant arts, film, and music scenes.",
+        "The UK is a land of diverse attractions, from bustling cities to natural wonders. It’s a melting pot of cultures, with vibrant arts, film, and music scenes.",
     },
 
     {
@@ -43,7 +43,7 @@ export const Australia = () => {
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620555/Travel_3_gcpv8h.png",
       ],
-      header: "USA",
+      header: "Canada",
       subtext:
         "Canada is celebrated for its high quality of life, stunning natural landscapes, and welcoming attitude towards immigrants. It’s a haven for adventure seekers and nature lovers alike.",
     },
@@ -219,15 +219,16 @@ export const Australia = () => {
         >
           <h1 className="location__heading">Our location</h1>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31715.214649514615!2d3.6194410057794744!3d6.470676235337425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf9ad9283e39b%3A0x1dbc4c625ed7f850!2sJoy%20Good%20mall!5e0!3m2!1sen!2sng!4v1731682410319!5m2!1sen!2sng"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63432.43500191985!2d3.6237259419604153!3d6.454682590673177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf9ad9283e39b%3A0x1dbc4c625ed7f850!2sJoy%20Good%20mall!5e0!3m2!1sen!2sng!4v1733488888596!5m2!1sen!2sng"
             width="100%"
-            height="600vh"
+            height="600"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Map showing the location of Joy Good Mall, Sangotedo, Lagos, Nigeria"
           ></iframe>
+
           <div className="location__sub">
             <h2>Lagos</h2>
             <p>
