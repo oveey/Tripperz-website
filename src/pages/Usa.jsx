@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import "../styles/explore.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
 export const Usa = () => {
   useEffect(() => {
@@ -17,22 +20,22 @@ export const Usa = () => {
   const images = [
     {
       key: "set1",
-      mainT: "USA",
+      mainT: "UK",
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620546/Travel_1_p4v7sm.png",
       ],
-      header: "United state of America",
+      header: "United state of london",
       subtext:
         "The USA is a land of diverse attractions, from bustling cities to natural wonders. It’s a melting pot of cultures, with vibrant arts, film, and music scenes.",
     },
 
     {
       key: "set2",
-      mainT: "UK",
+      mainT: "South Africa",
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620533/Travel_2_dxfpkq.png",
       ],
-      header: "United Kingdom",
+      header: "South Africa",
       subtext:
         "The UK is a land of diverse attractions, from bustling cities to natural wonders. It’s a melting pot of cultures, with vibrant arts, film, and music scenes.",
     },
@@ -197,14 +200,13 @@ export const Usa = () => {
         >
           <h1 className="other__destination__heading">Top Destinations</h1>
 
+
           <div className="other__destination__img">
             {images.map((imageSet) => (
               <div key={imageSet.key} className="image__conn-container">
                 {/* Image Background */}
                 <div
-                  className={`image__conn ${
-                    imageSet.key === "set3" ? "highlight" : ""
-                  }`}
+                  className={`image__conn ${imageSet.key === "set3"}`}
                   style={{ backgroundImage: `url(${imageSet.urls[0]})` }}
                 >
                   <div className="inside__image__text">
@@ -213,12 +215,35 @@ export const Usa = () => {
                 </div>
                 {/* Header and Subtext */}
                 <div className="image__text-container">
-                  <h2 className="image__header">{imageSet.header}</h2>
-                  <p className="image__subtext">{imageSet.subtext}</p>
+                  <Link to={
+                      imageSet.mainT === "USA"
+                        ? "/usa"
+                        : imageSet.mainT === "Canada"
+                        ? "/canada"
+                        : imageSet.mainT === "Australia"
+                        ? "/australia"
+                        : imageSet.mainT === "SouthAfrica"
+                        ? "/SouthAfrica"
+                        : imageSet.mainT === "UK"
+                        ? "/uk"
+                        : `/explore/${imageSet.key}`
+                    }>
+                    <h2 className="image__header">
+                      {imageSet.header}
+                      <span className="icon-container">
+                        <FontAwesomeIcon
+                          icon={faArrowRight}
+                          className="arrow-icon"
+                        />
+                      </span>
+                    </h2>
+                    <p className="image__subtext">{imageSet.subtext}</p>
+                  </Link>
                 </div>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 

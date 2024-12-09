@@ -2,6 +2,10 @@ import React, { useEffect } from "react";
 import "../styles/explore.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
+
 
 export const Canada = () => {
   useEffect(() => {
@@ -39,11 +43,11 @@ export const Canada = () => {
 
     {
       key: "set3",
-      mainT: "Canada",
+      mainT: "South Africa",
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1731620555/Travel_3_gcpv8h.png",
       ],
-      header: "Canada",
+      header: "South Africa",
       subtext:
         "Canada is celebrated for its high quality of life, stunning natural landscapes, and welcoming attitude towards immigrants. It’s a haven for adventure seekers and nature lovers alike.",
     },
@@ -51,7 +55,6 @@ export const Canada = () => {
 
   return (
     <>
-
       <section className="explore__section">
         <div className="explore__inner__con " data-aos="zoom-in-down">
           <h1 className="explore__text">
@@ -169,9 +172,7 @@ export const Canada = () => {
 
             <li>• Butter Tarts</li>
 
-            <li>
-              • Fresh Atlantic Lobster (in coastal regions)
-            </li>
+            <li>• Fresh Atlantic Lobster (in coastal regions)</li>
           </ul>
 
           <div
@@ -209,8 +210,30 @@ export const Canada = () => {
                 </div>
                 {/* Header and Subtext */}
                 <div className="image__text-container">
-                  <h2 className="image__header">{imageSet.header}</h2>
-                  <p className="image__subtext">{imageSet.subtext}</p>
+                  <Link to={
+                      imageSet.mainT === "USA"
+                        ? "/usa"
+                        : imageSet.mainT === "Canada"
+                        ? "/canada"
+                        : imageSet.mainT === "Australia"
+                        ? "/australia"
+                        : imageSet.mainT === "SouthAfrica"
+                        ? "/SouthAfrica"
+                        : imageSet.mainT === "UK"
+                        ? "/uk"
+                        : `/explore/${imageSet.key}`
+                    }>
+                    <h2 className="image__header">
+                      {imageSet.header}
+                      <span className="icon-container">
+                        <FontAwesomeIcon
+                          icon={faArrowRight}
+                          className="arrow-icon"
+                        />
+                      </span>
+                    </h2>
+                    <p className="image__subtext">{imageSet.subtext}</p>
+                  </Link>
                 </div>
               </div>
             ))}

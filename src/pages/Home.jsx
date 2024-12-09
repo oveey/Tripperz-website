@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from "swiper/modules";
 
+
 export const Home = () => {
   useEffect(() => {
     AOS.init({

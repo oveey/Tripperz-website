@@ -21,3 +21,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.image__link{
+  color:rgb(22, 23, 22);
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transition effects */
+}
+
+.image__link:hover {
+  color: #0044cc; /* Change color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+

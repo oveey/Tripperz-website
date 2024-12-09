@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import "../styles/explore.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
 
 export const Explore = () => {
@@ -205,8 +208,30 @@ export const Explore = () => {
                 </div>
                 {/* Header and Subtext */}
                 <div className="image__text-container">
-                  <h2 className="image__header">{imageSet.header}</h2>
-                  <p className="image__subtext">{imageSet.subtext}</p>
+                  <Link to={
+                      imageSet.mainT === "USA"
+                        ? "/usa"
+                        : imageSet.mainT === "Canada"
+                        ? "/canada"
+                        : imageSet.mainT === "Australia"
+                        ? "/australia"
+                        : imageSet.mainT === "SouthAfrica"
+                        ? "/SouthAfrica"
+                        : imageSet.mainT === "UK"
+                        ? "/uk"
+                        : `/explore/${imageSet.key}`
+                    } className="image__link">
+                    <h2 className="image__header">
+                      {imageSet.header}
+                      <span className="icon-container">
+                        <FontAwesomeIcon
+                          icon={faArrowRight}
+                          className="arrow-icon"
+                        />
+                      </span>
+                    </h2>
+                    <p className="image__subtext">{imageSet.subtext}</p>
+                  </Link>
                 </div>
               </div>
             ))}
