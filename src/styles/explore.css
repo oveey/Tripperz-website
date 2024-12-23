@@ -403,10 +403,13 @@
   }
 
   .attraction h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 2rem 0;
   }
 
+  .attraction__info h2 {
+    font-size: 20px;
+  }
   .attraction h1 {
     font-size: 32px;
     margin-bottom: 8px;
