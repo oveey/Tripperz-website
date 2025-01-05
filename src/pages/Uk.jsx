@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "../styles/explore.css";
 import AOS from "aos";
+import { Footer } from "../component/Footer";
 import "aos/dist/aos.css"; // Import AOS styles
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 export const Uk = () => {
   useEffect(() => {
@@ -55,10 +55,11 @@ export const Uk = () => {
 
   return (
     <>
-
       <section className="explore__section">
         <div className="explore__inner__con " data-aos="zoom-in-down">
-          <h1 className="explore__text">A Journey Through History and Heritage</h1>
+          <h1 className="explore__text">
+            A Journey Through History and Heritage
+          </h1>
         </div>
       </section>
 
@@ -77,10 +78,7 @@ export const Uk = () => {
               It’s also a top travel destination during summer and winter.
             </h2>
 
-            <div
-              className="img__con2"
-              data-aos="fade-up"
-            >
+            <div className="img__con2" data-aos="fade-up">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1733360095/united_kingdom_ifst1c.png"
                 alt="Uk image"
@@ -96,24 +94,21 @@ export const Uk = () => {
         <div className="attraction__con">
           <ul className="attraction__info">
             <h2>London</h2>
-            <li>Explore iconic landmarks like Big Ben, Buckingham Palace, and the Tower of London.</li>
+            <li>
+              Explore iconic landmarks like Big Ben, Buckingham Palace, and the
+              Tower of London.
+            </li>
 
             <h2>Edinburgh</h2>
 
-            <li>
-            Discover the historic Edinburgh Castle and the Royal Mile.
-            </li>
+            <li>Discover the historic Edinburgh Castle and the Royal Mile.</li>
             <h2>The Cotswolds</h2>
 
-            <li>
-            Enjoy picturesque villages and rolling countryside.
-            </li>
+            <li>Enjoy picturesque villages and rolling countryside.</li>
 
             <h2>Stonehenge</h2>
 
-            <li>
-            Marvel at this ancient and mysterious stone circle.
-            </li>
+            <li>Marvel at this ancient and mysterious stone circle.</li>
           </ul>
 
           <div
@@ -199,7 +194,6 @@ export const Uk = () => {
         >
           <h1 className="other__destination__heading">Top Destinations</h1>
 
-
           <div className="other__destination__img">
             {images.map((imageSet) => (
               <div key={imageSet.key} className="image__conn-container">
@@ -214,7 +208,8 @@ export const Uk = () => {
                 </div>
                 {/* Header and Subtext */}
                 <div className="image__text-container">
-                  <Link to={
+                  <Link
+                    to={
                       imageSet.mainT === "USA"
                         ? "/usa"
                         : imageSet.mainT === "Canada"
@@ -226,7 +221,8 @@ export const Uk = () => {
                         : imageSet.mainT === "UK"
                         ? "/uk"
                         : `/explore/${imageSet.key}`
-                    }>
+                    }
+                  >
                     <h2 className="image__header">
                       {imageSet.header}
                       <span className="icon-container">
@@ -272,6 +268,8 @@ export const Uk = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };

@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
 import "../styles/explore.css";
 import AOS from "aos";
+import { Footer } from "../component/Footer";
 import "aos/dist/aos.css"; // Import AOS styles
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom';
-
-
+import { Link } from "react-router-dom";
 
 export const SouthAfrica = () => {
   useEffect(() => {
@@ -56,7 +55,6 @@ export const SouthAfrica = () => {
 
   return (
     <>
-
       <section className="explore__section">
         <div className="explore__inner__con " data-aos="zoom-in-down">
           <h1 className="explore__text">
@@ -139,10 +137,12 @@ export const SouthAfrica = () => {
 
             <ul className="travel__info">
               <li>South Africa uses the South African Rand (ZAR).</li>
-              <li>Tap water is safe in most urban areas but bottled water is recommended in
-              rural regions.</li>
               <li>
-              Wildlife safaris often require advanced bookings; plan ahead.
+                Tap water is safe in most urban areas but bottled water is
+                recommended in rural regions.
+              </li>
+              <li>
+                Wildlife safaris often require advanced bookings; plan ahead.
               </li>
             </ul>
           </div>
@@ -209,7 +209,8 @@ export const SouthAfrica = () => {
                 </div>
                 {/* Header and Subtext */}
                 <div className="image__text-container">
-                  <Link to={
+                  <Link
+                    to={
                       imageSet.mainT === "USA"
                         ? "/usa"
                         : imageSet.mainT === "Canada"
@@ -221,7 +222,8 @@ export const SouthAfrica = () => {
                         : imageSet.mainT === "UK"
                         ? "/uk"
                         : `/explore/${imageSet.key}`
-                    }>
+                    }
+                  >
                     <h2 className="image__header">
                       {imageSet.header}
                       <span className="icon-container">

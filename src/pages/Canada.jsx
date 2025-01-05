@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "../styles/explore.css";
+import { Footer } from "../component/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 export const Canada = () => {
   useEffect(() => {
@@ -210,7 +210,8 @@ export const Canada = () => {
                 </div>
                 {/* Header and Subtext */}
                 <div className="image__text-container">
-                  <Link to={
+                  <Link
+                    to={
                       imageSet.mainT === "USA"
                         ? "/usa"
                         : imageSet.mainT === "Canada"
@@ -222,7 +223,8 @@ export const Canada = () => {
                         : imageSet.mainT === "UK"
                         ? "/uk"
                         : `/explore/${imageSet.key}`
-                    }>
+                    }
+                  >
                     <h2 className="image__header">
                       {imageSet.header}
                       <span className="icon-container">
@@ -268,6 +270,8 @@ export const Canada = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };

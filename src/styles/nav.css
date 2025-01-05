@@ -83,11 +83,16 @@
   display: none;
 }
 
-/* @media (max-width: 1200px) {
+
+@media (max-width: 2680px) {
+
   .home__nav {
-    padding: 20px 30px;
+
+    padding: 10px 400px;
+ 
   }
-} */
+ 
+}
 
 @media (max-width: 900px) {
   .link {

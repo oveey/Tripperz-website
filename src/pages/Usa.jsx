@@ -2,18 +2,19 @@ import React, { useEffect } from "react";
 import "../styles/explore.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Footer } from "../component/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const Usa = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration: 1000,
       easing: "ease-in-out",
-      startEvent: "DOMContentLoaded", 
-      offset: 120, 
-      once: true, 
+      startEvent: "DOMContentLoaded",
+      offset: 120,
+      once: true,
     });
   }, []);
 
@@ -52,10 +53,8 @@ export const Usa = () => {
     },
   ];
 
-
   return (
     <>
-
       <section className="explore__section">
         <div className="explore__inner__con " data-aos="zoom-in-down">
           <h1 className="explore__text">
@@ -194,12 +193,8 @@ export const Usa = () => {
       </section>
 
       <section className="other__destination__section" id="explore">
-        <div
-          className="other__destination__con"
-          data-aos="fade-up"
-        >
+        <div className="other__destination__con" data-aos="fade-up">
           <h1 className="other__destination__heading">Top Destinations</h1>
-
 
           <div className="other__destination__img">
             {images.map((imageSet) => (
@@ -215,7 +210,8 @@ export const Usa = () => {
                 </div>
                 {/* Header and Subtext */}
                 <div className="image__text-container">
-                  <Link to={
+                  <Link
+                    to={
                       imageSet.mainT === "USA"
                         ? "/usa"
                         : imageSet.mainT === "Canada"
@@ -227,7 +223,8 @@ export const Usa = () => {
                         : imageSet.mainT === "UK"
                         ? "/uk"
                         : `/explore/${imageSet.key}`
-                    }>
+                    }
+                  >
                     <h2 className="image__header">
                       {imageSet.header}
                       <span className="icon-container">
@@ -243,7 +240,6 @@ export const Usa = () => {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
@@ -274,6 +270,8 @@ export const Usa = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };

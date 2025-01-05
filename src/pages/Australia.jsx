@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/explore.css";
+import { Footer } from "../component/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -264,6 +265,8 @@ export const Australia = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };

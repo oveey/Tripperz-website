@@ -12,7 +12,7 @@
   flex-direction: column;
   gap: 1rem;
   color: #fff;
-  padding: 0 6rem; /* Equivalent to 96px for better readability */
+  padding: 0 6rem; 
 }
 
 .explore__text {
@@ -215,6 +215,7 @@
 .image__header{
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 
@@ -230,7 +231,34 @@
 
 
 /***************************************** Media query **********************************************************************************/
+@media (max-width: 2680px) {
+
+  .explore__inner__con  {
+   
+    padding: 96px 400px ;
+  
+  }
+
+  .destination__section {
+    padding: 96px 400px;
+  }
+
+  .attraction__section {
+    padding: 96px 400px;
+  
+  }
+
+  .other__destination__section {
+    padding: 96px 400px;
+  }
+
+  .travel__section {
+    padding: 96px 400px;
+  }
+
+}
 @media (max-width: 1200px) {
+
   .header__section {
     padding-bottom: 400px;
   }

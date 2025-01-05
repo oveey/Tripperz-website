@@ -546,10 +546,51 @@
   color: var(--Shark-500, #737584);
 }
 
+
+
 /***************************************** Media query **********************************************************************************/
+@media (max-width: 2680px) {
+
+  .whoweare__section {
+
+    padding: 10px 400px;
+ 
+  }
+
+  .comment__section {
+    padding: 450px;
+  }
+
+  .our__service__section {
+    padding: 10px 400px;
+    
+  }
+
+  .destination__section {
+    padding: 400px;
+  }
+
+  .testimonial__section {
+    padding: 400px;
+ 
+  }
+
+  .location__section {
+    padding: 400px;
+
+  }
+  .team__section {
+    padding: 400px;
+
+  }
+
+
+ 
+}
+
 @media (max-width: 1200px) {
   .header__section {
-    padding-bottom: 400px;
+    padding-bottom: 10px 400px;
   }
 
   .header__inner__con {

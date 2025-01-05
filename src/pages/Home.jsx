@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Nav } from "../component/Nav";
+import { Footer } from "../component/Footer";
 import Faq from "../component/Faq";
 import "../styles/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +13,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from "swiper/modules";
-
 
 export const Home = () => {
   useEffect(() => {
@@ -383,6 +383,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

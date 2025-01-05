@@ -76,6 +76,11 @@ export const Nav = () => {
             FAQ
           </Link>
         </li>
+        <li>
+          <Link to="/blog" className="nav_link">
+            Blog
+          </Link>
+        </li>
         <li className="nav-button2">
           <a
             href="https://mainstack.me/tripperzway"

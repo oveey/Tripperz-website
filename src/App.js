@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { Explore } from "./pages/Explore";
 import { Uk } from "./pages/Uk";
 import { Nav } from "./component/Nav";
+import { Blog } from "./pages/Blog";
 import { Usa } from "./pages/Usa";
 import { Canada } from "./pages/Canada";
 import { SouthAfrica } from "./pages/SouthAfrica";
@@ -15,9 +16,13 @@ const App = () => {
     <Router>
       <ScrollToTop />
       <Nav />
+
       <Routes>
         {/* Home route */}
         <Route path="/" element={<Home />} />
+
+        <Route path="/blog" element={<Blog />} />
+
         
         {/* Explore page with dynamic parameter */}
         <Route path="/explore/:key" element={<Explore />} />
