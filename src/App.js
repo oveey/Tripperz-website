@@ -3,43 +3,41 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Explore } from "./pages/Explore";
 import { Uk } from "./pages/Uk";
-import { Nav } from "./component/Nav";
-import { Blog } from "./pages/Blog";
+import { Nav } from "./component/Nav"; 
+import Blog from "./pages/Blog";
 import { Usa } from "./pages/Usa";
 import { Canada } from "./pages/Canada";
 import { SouthAfrica } from "./pages/SouthAfrica";
 import { Australia } from "./pages/Australia";
-import ScrollToTop from "./ScrollToTop"; 
+import ScrollToTop from "./ScrollToTop";
+import {Blogs} from "./pages/Blogs";
 
 const App = () => {
   return (
     <Router>
+      {/* Ensure the page scrolls to the top when navigating */}
       <ScrollToTop />
+
+      {/* Navigation Bar */}
       <Nav />
 
+      {/* Routes */}
       <Routes>
-        {/* Home route */}
+        {/* Home Page */}
         <Route path="/" element={<Home />} />
 
-        <Route path="/blog" element={<Blog />} />
+        {/* Blog Pages */}
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:id" element={<Blog />} />
 
-        
-        {/* Explore page with dynamic parameter */}
+        {/* Explore Page with Dynamic Parameter */}
         <Route path="/explore/:key" element={<Explore />} />
 
-        {/* USA page */}
+        {/* Country-Specific Pages */}
         <Route path="/usa" element={<Usa />} />
-
-        {/* USA page */}
         <Route path="/uk" element={<Uk />} />
-
-        {/* Canada page */}
         <Route path="/canada" element={<Canada />} />
-
-        {/* South Africa page */}
-        <Route path="/SouthAfrica" element={<SouthAfrica />} />
-
-        {/* Australia page */}
+        <Route path="/southafrica" element={<SouthAfrica />} />
         <Route path="/australia" element={<Australia />} />
       </Routes>
     </Router>
@@ -47,5 +45,6 @@ const App = () => {
 };
 
 export default App;
+
 
 

@@ -231,7 +231,7 @@
 
 
 /***************************************** Media query **********************************************************************************/
-@media (max-width: 2680px) {
+/* @media (max-width: 2680px) {
 
   .explore__inner__con  {
    
@@ -256,7 +256,7 @@
     padding: 96px 400px;
   }
 
-}
+} */
 @media (max-width: 1200px) {
 
   .header__section {

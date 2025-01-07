@@ -77,7 +77,7 @@ export const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link to="/blog" className="nav_link">
+          <Link to="/blogs" className="nav_link">
             Blog
           </Link>
         </li>

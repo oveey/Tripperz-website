@@ -78,7 +78,7 @@
   color: #fff;
   text-decoration: none;
 }
-
+/* 
 @media (max-width: 2680px) {
 
   .footer__section {
@@ -87,7 +87,7 @@
   
   }
 
-}
+} */
 
 @media (max-width: 1200px) {
   .footer__section {
