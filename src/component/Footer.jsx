@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import "../styles/footer.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faLinkedin, faTiktok, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
 import "aos/dist/aos.css";
 
 export const Footer = () => {
@@ -51,9 +54,8 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720304488/Facebook_wthbhy.svg"
-                  alt=""
+                <FontAwesomeIcon className="icon"
+                  icon={faFacebook}
                 />
               </a>
 
@@ -62,21 +64,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720304498/Instagram_vlkpa4.svg"
-                  alt=""
-                />
-              </a>
-
-              <a
-                href="https://www.instagram.com/xtremedimension/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720304498/Instagram_vlkpa4.svg"
-                  alt=""
-                />
+              <FontAwesomeIcon className="icon" icon={faInstagram} />
               </a>
 
               <a
@@ -84,22 +72,27 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720304498/Instagram_vlkpa4.svg"
-                  alt=""
-                />
+               <FontAwesomeIcon className="icon" icon={faLinkedin}/>
               </a>
+
+              <a
+                href="https://www.linkedin.com/company/tripperzway/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+               <FontAwesomeIcon className="icon" icon={faWhatsapp}/>
+              </a>
+
 
               <a
                 href="https://www.tiktok.com/@tripperz_way"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1720304498/Instagram_vlkpa4.svg"
-                  alt=""
-                />
+               <FontAwesomeIcon className="icon" icon={faTiktok}  />
               </a>
+
+         
             </div>
           </div>
         </div>

@@ -9,11 +9,14 @@ const Blog = () => {
 
   if (!blog) {
     return (
-      <div className="max-w-screen-lg mx-auto px-6 py-12 text-center font-poppins">
-        <h2 className="text-2xl font-semibold text-gray-800">Blog Not Found</h2>
+      <div className="Error__blog">
+        <h2>Blog Not Found</h2>
+        <p>The blog you are looking for does not exist. Please check the URL or go back to the blog list.</p>
+        <a href="/blogs">Go Back to Blogs</a>
       </div>
     );
   }
+  
 
   return (
     <BlogDetails
