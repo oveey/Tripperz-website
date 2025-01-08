@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faLinkedin, faTiktok, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
 import "aos/dist/aos.css";
 
 export const Footer = () => {
@@ -75,13 +74,13 @@ export const Footer = () => {
                <FontAwesomeIcon className="icon" icon={faLinkedin}/>
               </a>
 
-              <a
+              {/* <a
                 href="https://www.linkedin.com/company/tripperzway/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                <FontAwesomeIcon className="icon" icon={faWhatsapp}/>
-              </a>
+              </a> */}
 
 
               <a
