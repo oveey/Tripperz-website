@@ -3,7 +3,13 @@ import "../styles/footer.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faLinkedin, faTiktok, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faTiktok,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import "aos/dist/aos.css";
 
 export const Footer = () => {
@@ -34,17 +40,23 @@ export const Footer = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about-us">About Us</Link>
+                <Link to="/#who">About Us</Link>
               </li>
               <li>
-                <Link to="/about-us">FAQ</Link>
+                <Link to="/#faq">FAQ</Link>
               </li>
 
               <li>
-                <Link to="/contact">Blog</Link>
+                <Link to="/blogs">Blog</Link>
               </li>
               <li>
-                <Link to="/contact">Contact Us</Link>
+                <a
+                  href="https://mainstack.me/tripperzway"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact Us
+                </a>
               </li>
             </ul>
             <div className="footer__social">
@@ -53,9 +65,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon className="icon"
-                  icon={faFacebook}
-                />
+                <FontAwesomeIcon className="icon" icon={faFacebook} />
               </a>
 
               <a
@@ -63,7 +73,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              <FontAwesomeIcon className="icon" icon={faInstagram} />
+                <FontAwesomeIcon className="icon" icon={faInstagram} />
               </a>
 
               <a
@@ -71,7 +81,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-               <FontAwesomeIcon className="icon" icon={faLinkedin}/>
+                <FontAwesomeIcon className="icon" icon={faLinkedin} />
               </a>
 
               {/* <a
@@ -82,16 +92,13 @@ export const Footer = () => {
                <FontAwesomeIcon className="icon" icon={faWhatsapp}/>
               </a> */}
 
-
               <a
                 href="https://www.tiktok.com/@tripperz_way"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-               <FontAwesomeIcon className="icon" icon={faTiktok}  />
+                <FontAwesomeIcon className="icon" icon={faTiktok} />
               </a>
-
-         
             </div>
           </div>
         </div>

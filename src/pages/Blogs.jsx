@@ -3,6 +3,7 @@ import BlogCategories from "../component/blog-components/BlogCategories";
 import BlogHero from "./BlogHero";
 import BlogPagination from "../component/blog-components/BlogPagination";
 import { blogData, categoryData } from "../data/blogData";
+import Whatsapp from "../component/Whatsapp";
 import { useState } from "react";
 import { Footer } from "../component/Footer";
 
@@ -31,6 +32,7 @@ export const Blogs = () => {
 
   return (
     <>
+      <Whatsapp />
       {/* Hero Section */}
       <BlogHero />
 
@@ -92,4 +94,3 @@ export const Blogs = () => {
     </>
   );
 };
-

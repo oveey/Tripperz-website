@@ -19,3 +19,11 @@
   transform: scale(1.1);
   background-color: #1ebe57;
 }
+
+@media (max-width: 600px) {
+  .whatsapp__icon {
+    font-size: 40px;
+  }
+}
+
+

@@ -122,4 +122,8 @@
   .footer__content {
     display: block;
   }
+
+  .icon{
+    font-size: 30px;
+  }
 }

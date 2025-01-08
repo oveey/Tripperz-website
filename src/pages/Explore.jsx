@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/explore.css";
 import AOS from "aos";
 import { Footer } from "../component/Footer";
+import Whatsapp from "../component/Whatsapp";
 import "aos/dist/aos.css"; // Import AOS styles
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -55,6 +56,8 @@ export const Explore = () => {
 
   return (
     <>
+          <Whatsapp />
+
       <section className="explore__section">
         <div className="explore__inner__con " data-aos="zoom-in-down">
           <h1 className="explore__text">
