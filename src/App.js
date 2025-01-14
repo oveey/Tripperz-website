@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Explore } from "./pages/Explore";
 import { Uk } from "./pages/Uk";
-import { Nav } from "./component/Nav"; 
+import { Nav } from "./component/Nav";
 import Blog from "./pages/Blog";
 import { Usa } from "./pages/Usa";
 import { Canada } from "./pages/Canada";
 import { SouthAfrica } from "./pages/SouthAfrica";
 import { Australia } from "./pages/Australia";
 import ScrollToTop from "./ScrollToTop";
-import {Blogs} from "./pages/Blogs";
+import { Blogs } from "./pages/Blogs";
 
 const App = () => {
   return (
@@ -45,6 +45,3 @@ const App = () => {
 };
 
 export default App;
-
-
-

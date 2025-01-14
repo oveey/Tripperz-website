@@ -57,7 +57,7 @@ export const Nav = () => {
   return (
     <div className={`home__nav ${isScrolled ? "scrolled" : ""}`}>
       <Link to="/">
-        <img src="./assets/tripperzway.svg" alt="logo" />
+        <img src="/assets/tripperzway.svg" alt="logo" />
       </Link>
 
       <ul className={`${isOpen ? "open" : ""}`}>

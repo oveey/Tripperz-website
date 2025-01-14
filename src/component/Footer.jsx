@@ -28,7 +28,7 @@ export const Footer = () => {
         <div className="footer">
           <div className="footer__content" data-aos="fade-up">
             <div className="footer__logo">
-              <img src="./assets/tripperzway.svg" alt="logo" />
+              <img src="/assets/tripperzway.svg" alt="logo" />
 
               <p className="logo__text">
                 We are a passionate travel agency that spent years helping

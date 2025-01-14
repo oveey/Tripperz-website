@@ -2,9 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./blog.css";
 
-
-
-
 const BlogCard = ({
   id,
   image,
@@ -17,10 +14,7 @@ const BlogCard = ({
   const navigate = useNavigate();
 
   return (
-    <div
-      className="blog__container"
-      onClick={() => navigate(`/blog/${id}`)}
-    >
+    <div className="blog__container" onClick={() => navigate(`/blog/${id}`)}>
       {/* Image Section */}
       <img
         src={image}
@@ -31,9 +25,7 @@ const BlogCard = ({
 
       {/* Content Section */}
       <div className="blog__content">
-        <h2>
-          {title}
-        </h2>
+        <h2>{title}</h2>
         <p>{description}</p>
 
         {/* Author and Date */}
@@ -43,9 +35,7 @@ const BlogCard = ({
         </div>
 
         {/* Category */}
-        <div className="blog__category">
-          {category}
-        </div>
+        <div className="blog__category">{category}</div>
       </div>
     </div>
   );

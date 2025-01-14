@@ -7,9 +7,6 @@
   padding-bottom: 250px;
 }
 
-
-
-
 .header__inner__con {
   display: flex;
   flex-direction: column;
@@ -58,7 +55,9 @@
   backdrop-filter: blur(6.92307710647583px);
   cursor: pointer;
   border-radius: 138.462px;
-  transition: background-color 0.3s ease, transform 0.3s ease,
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 
@@ -135,9 +134,9 @@
 }
 .img__con img {
   width: 100%;
-  height: auto; 
-  display: block; 
-  object-fit: cover; 
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .box {
@@ -302,19 +301,19 @@
   justify-content: flex-start;
 }
 
-.explore-button{
-  color:white;
+.explore-button {
+  color: white;
   cursor: pointer;
 }
 
 .image__con {
   height: 480px;
   width: 100%;
-  flex: 1 1 calc(50% - 10px); 
-  max-width: calc(50% - 20px); 
+  flex: 1 1 calc(50% - 10px);
+  max-width: calc(50% - 20px);
   background-size: cover;
   background-position: center;
-  margin: 10px; 
+  margin: 10px;
   border-radius: 8px;
   color: white;
 }
@@ -325,11 +324,9 @@
 } */
 
 .south-africa-style {
-  flex: 1 1 100%; 
+  flex: 1 1 100%;
   max-width: 100%;
-  
 }
-
 
 .inside__image__text {
   display: flex;
@@ -339,7 +336,7 @@
   padding: 30px 35px;
   justify-content: space-between;
   align-items: flex-start;
-  height: 100%; 
+  height: 100%;
 }
 
 .inside__image__text h1 {
@@ -360,7 +357,9 @@
   background: rgba(255, 255, 255, 0.14);
   backdrop-filter: blur(6.92307710647583px);
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease,
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 
@@ -495,12 +494,11 @@
   justify-content: flex-end;
 }
 
-.team__bg{
+.team__bg {
   padding: 16px;
   backdrop-filter: blur(6.92307710647583px);
   background: #00000033;
   width: 100%;
-  
 }
 
 /***************************************** Footer section **********************************************************************************/
@@ -545,8 +543,6 @@
   margin-top: 10px;
   color: var(--Shark-500, #737584);
 }
-
-
 
 /***************************************** Media query **********************************************************************************/
 /* @media (max-width: 2680px) {
@@ -1113,9 +1109,6 @@
     margin: 10px; /* Adjust spacing as needed */
   }
 
-  
-  
-
   /***************************************** Footer section **********************************************************************************/
 
   .location__section {
@@ -1157,5 +1150,3 @@
     color: var(--Shark-500, #737584);
   } */
 }
-
-

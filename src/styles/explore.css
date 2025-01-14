@@ -12,13 +12,13 @@
   flex-direction: column;
   gap: 1rem;
   color: #fff;
-  padding: 0 6rem; 
+  padding: 0 6rem;
 }
 
 .explore__text {
   margin-top: 150px;
-  font-size: 88px;
-  max-width: 900px;
+  font-size: 50px;
+  max-width: 600px;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
@@ -65,7 +65,6 @@
   justify-content: space-between;
   margin: 60px 0;
   gap: 100px;
-
 }
 
 /* .attraction__info{
@@ -89,17 +88,13 @@
 .img__con4 img {
   width: 100%;
   height: 480px;
-
 }
-
 
 /***************************************** Travel section **********************************************************************************/
 
 .attraction__section {
   padding: 96px;
 }
-
-
 
 .attraction__info li {
   display: flex;
@@ -114,11 +109,9 @@
   color: #181d27;
 }
 
-
 .img__con3 {
   width: 100%;
 }
-
 
 .img__con3 img {
   width: 100%;
@@ -212,23 +205,23 @@
   margin: 20px 0;
 }
 
-.image__header{
+.image__header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-
-.image__link{
-  color:rgb(22, 23, 22);
-  transition: color 0.3s ease, transform 0.3s ease; /* Add transition effects */
+.image__link {
+  color: rgb(22, 23, 22);
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease; /* Add transition effects */
 }
 
 .image__link:hover {
   color: #0044cc; /* Change color on hover */
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
-
 
 /***************************************** Media query **********************************************************************************/
 /* @media (max-width: 2680px) {
@@ -258,7 +251,6 @@
 
 } */
 @media (max-width: 1200px) {
-
   .header__section {
     padding-bottom: 400px;
   }
@@ -382,15 +374,9 @@
     max-width: 457px;
     width: 100%;
   }
-
-  
-
-
-
 }
 
 @media (max-width: 800px) {
-
   /***************************************** Hero section **********************************************************************************/
 
   .explore__section {
@@ -405,14 +391,12 @@
     gap: 1rem;
     color: #fff;
     padding: 0 1rem; /* Equivalent to 96px for better readability */
-
   }
-
 
   .explore__text {
     margin-top: 50px;
     font-size: 32px;
-    max-width: 900px;
+    max-width: 400px;
   }
 
   .explore__p {
@@ -443,7 +427,7 @@
     margin-bottom: 8px;
   }
 
-  .attraction__info{
+  .attraction__info {
     width: 100%;
   }
 
@@ -453,7 +437,6 @@
     flex-direction: column;
     gap: 100;
     margin: 60px 0;
-
   }
 
   .img__con2 {
@@ -475,8 +458,6 @@
     padding: 16px;
   }
 
- 
-
   .attraction__info li {
     display: flex;
     font-weight: 400;
@@ -488,7 +469,7 @@
     font-size: 32px;
   }
 
-  .img__con3{
+  .img__con3 {
     width: 100%;
   }
 
@@ -515,7 +496,6 @@
 
   .travel__heading {
     font-size: 32px;
-  
   }
 
   /***************************************** Destination section **********************************************************************************/
@@ -751,14 +731,9 @@
     font-size: 32px;
   }
 
-
-
   .image__con {
     max-width: 347px;
   }
-
-  
-
 
   /***************************************** Testimonial section **********************************************************************************/
 

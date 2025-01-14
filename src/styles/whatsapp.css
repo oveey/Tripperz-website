@@ -9,11 +9,12 @@
   width: 80px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.101);
   z-index: 1000; /* Ensure it stays on top */
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
   font-size: 40px;
   text-align: center;
 }
-
 
 .whatsapp__icon:hover {
   transform: scale(1.1);
@@ -25,5 +26,3 @@
     font-size: 40px;
   }
 }
-
-

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Nav } from "../component/Nav";
 import { Footer } from "../component/Footer";
-import Whatsapp  from "../component/Whatsapp";
+import Whatsapp from "../component/Whatsapp";
 import Faq from "../component/Faq";
 import "../styles/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -122,7 +122,7 @@ export const Home = () => {
 
   return (
     <>
-     <Whatsapp />
+      <Whatsapp />
 
       <section className="header__section" id="home">
         <Nav />
@@ -252,14 +252,14 @@ export const Home = () => {
                       imageSet.mainT === "USA"
                         ? "/usa"
                         : imageSet.mainT === "Canada"
-                        ? "/canada"
-                        : imageSet.mainT === "Australia"
-                        ? "/australia"
-                        : imageSet.mainT === "SouthAfrica"
-                        ? "/SouthAfrica"
-                        : imageSet.mainT === "UK"
-                        ? "/uk"
-                        : `/explore/${imageSet.key}`
+                          ? "/canada"
+                          : imageSet.mainT === "Australia"
+                            ? "/australia"
+                            : imageSet.mainT === "SouthAfrica"
+                              ? "/SouthAfrica"
+                              : imageSet.mainT === "UK"
+                                ? "/uk"
+                                : `/explore/${imageSet.key}`
                     }
                     className="explore-button"
                   >

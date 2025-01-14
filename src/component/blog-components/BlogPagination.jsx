@@ -13,8 +13,8 @@ const BlogPagination = ({ currentPage, totalPages, onPageChange }) => {
       <button
         className={`blog__button ${
           currentPage === 1
-            ? 'bg-gray-300 cursor-not-allowed'
-            : 'bg-blue-600 text-white hover:bg-blue-700'
+            ? "bg-gray-300 cursor-not-allowed"
+            : "bg-blue-600 text-white hover:bg-blue-700"
         }`}
         onClick={handlePrevious}
         disabled={currentPage === 1}
@@ -32,8 +32,8 @@ const BlogPagination = ({ currentPage, totalPages, onPageChange }) => {
       <button
         className={`blog__button ${
           currentPage === totalPages
-            ? 'bg-gray-300 cursor-not-allowed'
-            : 'bg-blue-600 text-white hover:bg-blue-700'
+            ? "bg-gray-300 cursor-not-allowed"
+            : "bg-blue-600 text-white hover:bg-blue-700"
         }`}
         onClick={handleNext}
         disabled={currentPage === totalPages}

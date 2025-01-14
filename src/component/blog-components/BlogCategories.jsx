@@ -20,7 +20,9 @@ const BlogCategories = ({ categories, onSelectCategory }) => {
           <li
             key={index}
             className={`cursor-pointer ${
-              activeCategory === category ? "text-red-600 underline" : "text-blue-600"
+              activeCategory === category
+                ? "text-red-600 underline"
+                : "text-blue-600"
             }`}
             onClick={() => handleCategoryClick(category)}
           >
@@ -33,4 +35,3 @@ const BlogCategories = ({ categories, onSelectCategory }) => {
 };
 
 export default BlogCategories;
-

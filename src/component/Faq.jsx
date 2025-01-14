@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"; 
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import "../styles/faq.css";
 
 const Faq = () => {
@@ -23,16 +23,17 @@ const Faq = () => {
         "The visa packages we offer include tourist, study and work packages. We also curate vacation tours for multiple tourist destinations.",
     },
     {
-      question: "I don’t know much about travels, can I still start my travel journey ?",
+      question:
+        "I don’t know much about travels, can I still start my travel journey ?",
       answer:
         "Yes, you can. We have multiple travel representatives to help assist you with your travel process and free consultation is available for both first-time and returning clients.",
     },
     {
-      question: "I’ve been denied previously, will this be a hindrance in my visa processing?",
+      question:
+        "I’ve been denied previously, will this be a hindrance in my visa processing?",
       answer:
         "Although this may be something to worry about, with us, you have nothing to fear. Our visa officer is efficient and highly skilled and we have positive success rates with clients that reapply..",
     },
-   
   ];
 
   return (

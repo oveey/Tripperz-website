@@ -56,7 +56,7 @@ export const Explore = () => {
 
   return (
     <>
-          <Whatsapp />
+      <Whatsapp />
 
       <section className="explore__section">
         <div className="explore__inner__con " data-aos="zoom-in-down">
@@ -217,14 +217,14 @@ export const Explore = () => {
                       imageSet.mainT === "USA"
                         ? "/usa"
                         : imageSet.mainT === "Canada"
-                        ? "/canada"
-                        : imageSet.mainT === "Australia"
-                        ? "/australia"
-                        : imageSet.mainT === "SouthAfrica"
-                        ? "/SouthAfrica"
-                        : imageSet.mainT === "UK"
-                        ? "/uk"
-                        : `/explore/${imageSet.key}`
+                          ? "/canada"
+                          : imageSet.mainT === "Australia"
+                            ? "/australia"
+                            : imageSet.mainT === "SouthAfrica"
+                              ? "/SouthAfrica"
+                              : imageSet.mainT === "UK"
+                                ? "/uk"
+                                : `/explore/${imageSet.key}`
                     }
                     className="image__link"
                   >

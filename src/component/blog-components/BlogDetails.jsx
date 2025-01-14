@@ -1,8 +1,6 @@
 import React from "react";
 import { Footer } from "../Footer";
 
-
-
 const BlogDetails = ({ title, image, author, date, content }) => {
   return (
     <>
@@ -22,14 +20,14 @@ const BlogDetails = ({ title, image, author, date, content }) => {
       <section>
         {/* Blog Content */}
         <div
-          className="prose mt-4"
+          className="Blog_writeup_section"
           dangerouslySetInnerHTML={{
             __html: content, // Be cautious with this to avoid XSS vulnerabilities
           }}
         ></div>
       </section>
 
-      <section className="location__section" id="location">
+      <section className="location__section">
         <div
           className="location__con"
           data-aos="fade-up"
@@ -57,7 +55,7 @@ const BlogDetails = ({ title, image, author, date, content }) => {
         </div>
       </section>
 
-     <Footer/>
+      <Footer />
     </>
   );
 };

@@ -216,14 +216,14 @@ export const Uk = () => {
                       imageSet.mainT === "USA"
                         ? "/usa"
                         : imageSet.mainT === "Canada"
-                        ? "/canada"
-                        : imageSet.mainT === "Australia"
-                        ? "/australia"
-                        : imageSet.mainT === "SouthAfrica"
-                        ? "/SouthAfrica"
-                        : imageSet.mainT === "UK"
-                        ? "/uk"
-                        : `/explore/${imageSet.key}`
+                          ? "/canada"
+                          : imageSet.mainT === "Australia"
+                            ? "/australia"
+                            : imageSet.mainT === "SouthAfrica"
+                              ? "/SouthAfrica"
+                              : imageSet.mainT === "UK"
+                                ? "/uk"
+                                : `/explore/${imageSet.key}`
                     }
                   >
                     <h2 className="image__header">
