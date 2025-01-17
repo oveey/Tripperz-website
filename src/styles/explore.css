@@ -224,12 +224,16 @@
 }
 
 /***************************************** Media query **********************************************************************************/
-/* @media (max-width: 2680px) {
+/* @media (min-width: 1200px) {
 
   .explore__inner__con  {
    
     padding: 96px 400px ;
   
+  }
+
+  .destination__section {
+    padding: 96px 400px;
   }
 
   .destination__section {
@@ -250,6 +254,8 @@
   }
 
 } */
+
+
 @media (max-width: 1200px) {
   .header__section {
     padding-bottom: 400px;
@@ -336,6 +342,7 @@
     overflow: hidden;
     margin-bottom: 6rem;
   }
+
   .our__service__con {
     display: flex;
     flex-direction: column;

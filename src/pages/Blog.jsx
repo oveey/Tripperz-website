@@ -7,6 +7,8 @@ const Blog = () => {
   const { id } = useParams(); // Extract `id` from the route parameters
   const blog = blogData.find((item) => item.id === parseInt(id || "", 10)); // Find the blog by ID
 
+ 
+
   if (!blog) {
     return (
       <div className="Error__blog">

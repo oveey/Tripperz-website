@@ -501,6 +501,8 @@
   width: 100%;
 }
 
+
+
 /***************************************** Footer section **********************************************************************************/
 
 .location__section {
@@ -545,7 +547,7 @@
 }
 
 /***************************************** Media query **********************************************************************************/
-/* @media (max-width: 2680px) {
+/* @media (min-width: 1200px) {
 
   .whoweare__section {
 
@@ -554,7 +556,7 @@
   }
 
   .comment__section {
-    padding: 450px;
+    padding: 400px;
   }
 
   .our__service__section {
@@ -562,12 +564,14 @@
     
   }
 
+
+
   .destination__section {
     padding: 400px;
   }
 
   .testimonial__section {
-    padding: 400px;
+    padding: 50px 400px;
  
   }
 

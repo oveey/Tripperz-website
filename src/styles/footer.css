@@ -77,11 +77,12 @@
   color: #fff;
   text-decoration: none;
 }
+
 /* 
-@media (max-width: 2680px) {
+@media (min-width: 1600px) {
 
   .footer__section {
-   
+    background-color: antiquewhite;
     padding: 96px 400px ;
   
   }

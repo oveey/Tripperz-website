@@ -1,7 +1,8 @@
 import React from "react";
 import { Footer } from "../Footer";
 
-const BlogDetails = ({ title, image, author, date, content }) => {
+
+const BlogDetails = ({ title,  author, date, content, }) => {
   return (
     <>
       <section className="explore__section">
@@ -26,6 +27,15 @@ const BlogDetails = ({ title, image, author, date, content }) => {
           }}
         ></div>
       </section>
+
+      {/* Blog Cards */}
+      {/* <section className="blog__section">
+        <div className="blog__con">
+          {currentBlogs.map((blog) => (
+            <BlogCard key={blog.id} {...blog} />
+          ))}
+        </div>
+      </section> */}
 
       <section className="location__section">
         <div
