@@ -14,7 +14,7 @@ const Blog = () => {
       <div className="Error__blog">
         <h2>Blog Not Found</h2>
         <p>
-          The blog you are looking for does not exist. Please check the URL or
+          The blog you are looking for does not exist.
           go back to the blog list.
         </p>
         <a href="/blogs">Go Back to Blogs</a>

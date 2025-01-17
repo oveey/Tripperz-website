@@ -6,10 +6,10 @@ const BlogHero = () => {
     <section className="explore__section">
       <div className="explore__inner__con " data-aos="zoom-in-down">
         <h1 className="explore__text">Blog & Insights</h1>
-        <h2>
+        <h4>
           Stay updated with the latest trends, tips, and insights in the
-          automobile industry.
-        </h2>
+          Travel industry.
+        </h4>
       </div>
     </section>
   );

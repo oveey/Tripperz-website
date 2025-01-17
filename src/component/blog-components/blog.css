@@ -75,9 +75,12 @@
 }
 
 .Error__blog {
-  padding: 300px 80px 1000px;
+  padding: 300px 80px 400px;
   text-align: center;
-
+  background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1731431491/bg_lnag0j.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
 }
 .category__list li.active {
   color: blue;
