@@ -7,21 +7,18 @@ import "../styles/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from "swiper/modules";
-import  BlogCard from "../component/blog-components/BlogCard";
+import BlogCard from "../component/blog-components/BlogCard";
 import travelaroundtheworld from "../asset/travel-around-world.png";
 import earnings from "../asset/earnings.jpg";
 import visafree from "../asset/visa-free.jpg";
-
-
-
-
+import { useNavigate } from "react-router-dom";
 
 
 export const Home = () => {
@@ -35,36 +32,39 @@ export const Home = () => {
     });
   }, []);
 
+  const navigate = useNavigate();
+  
+
   const blogs = [
     {
-      title: 'Saving Money While Traveling Abroad',
-      description: 'Traveling abroad can be an exciting adventure, but it can also strain your wallet if you\'re not careful. Here are some practical tips to help Nigerian travelers save money on their journeys.',
+      title: "Saving Money While Traveling Abroad",
+      description:
+        "Traveling abroad can be an exciting adventure, but it can also strain your wallet if you're not careful. Here are some practical tips to help Nigerian travelers save money on their journeys.",
       image: travelaroundtheworld,
-      author: 'Zanas Emadamerho-Atori',
-      date: '2025-01-10',
+      author: "Zanas Emadamerho-Atori",
+      date: "2025-01-10",
       category: "Travel Tips",
-
     },
     {
-      title: 'Pack like a pro for your next vacation',
-      description: 'Packing for a trip can be quite a task, but with the right approach, you can make it a breeze. Here are some friendly and practical tips ....',
+      title: "Pack like a pro for your next vacation",
+      description:
+        "Packing for a trip can be quite a task, but with the right approach, you can make it a breeze. Here are some friendly and practical tips ....",
       image: earnings,
-      author: 'Zanas Emadamerho-Atori',
-      date: '2025-01-12',
+      author: "Zanas Emadamerho-Atori",
+      date: "2025-01-12",
       category: "Travel Tips",
-
     },
     {
-      title: 'Five Visa-Free Countries Nigerians Can Visit in 2025',
-      description: 'Traveling without the hassle of applying for a visa is a dream come true for many. Luckily, there are several countries Nigerians can visit visa-free in 2025.',
+      title: "Five Visa-Free Countries Nigerians Can Visit in 2025",
+      description:
+        "Traveling without the hassle of applying for a visa is a dream come true for many. Luckily, there are several countries Nigerians can visit visa-free in 2025.",
       image: visafree,
-      author: 'Zanas Emadamerho-Atori',
-      date: '2025-01-15',
+      author: "Zanas Emadamerho-Atori",
+      date: "2025-01-15",
       category: "Travel Tips",
-
     },
   ];
-  
+
   const images = [
     {
       key: "set1",
@@ -407,7 +407,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="location__section" id="location">
+      <section className="location__section">
         <div
           className="location__con"
           data-aos="fade-up"
@@ -434,6 +434,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
       <Footer />
     </>
   );

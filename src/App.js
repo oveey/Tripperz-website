@@ -21,6 +21,7 @@ const App = () => {
       {/* Navigation Bar */}
       <Nav />
 
+
       {/* Routes */}
       <Routes>
         {/* Home Page */}

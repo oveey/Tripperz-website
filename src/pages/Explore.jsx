@@ -124,6 +124,7 @@ export const Explore = () => {
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1733360087/top_attraction_dmmok3.png"
               alt="travel image"
+              loading="lazy" 
             />
           </div>
         </div>
@@ -158,6 +159,7 @@ export const Explore = () => {
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1733360096/Travel_tip_wys8wm.png"
               alt="a cup image"
+              loading="lazy" 
             />
           </div>
         </div>
@@ -184,7 +186,8 @@ export const Explore = () => {
           >
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1733361843/Local_cusine_cyyskx.png"
-              alt="a woman holding a phone up"
+              alt="a woman holding a phone up"               loading="lazy" 
+
             />
           </div>
         </div>
