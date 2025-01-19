@@ -22,7 +22,7 @@
   max-width: 900px;
 }
 .blog__text h2 {
-  font-size: 25px;
+  font-size: 35px;
   max-width: 550px;
 }
 .blog__text h3 {
@@ -33,10 +33,17 @@
 .blog__text p {
   font-size: 20px;
 }
+
+.blog__text ul {
+  list-style: initial; /* Ensure markers are displayed */
+}
+
 .blog__text li {
   font-size: 20px;
   margin-bottom: 16px;
 }
+
+
 
 .blog__categories {
   padding: 1rem;
@@ -56,6 +63,8 @@
   padding: 2rem 0;
   justify-content: center;
   flex-wrap: wrap;
+  list-style: none;
+
 }
 
 .category__list li {
@@ -117,6 +126,8 @@ p {
 .blog__author {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  color: rgb(88, 88, 88);
 }
 
 .blog__pag {

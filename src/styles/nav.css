@@ -10,6 +10,8 @@
   font-weight: 500;
   width: 100%;
   transition: background-color 0.3s ease;
+  list-style: none;
+
 }
 
 .home__nav.scrolled {
@@ -31,6 +33,7 @@
   color: #ffffff;
   /* width: 100%; */
   justify-content: flex-end;
+  list-style: none;
 }
 
 .nav-button a {
@@ -42,6 +45,7 @@
   border-radius: 138.462px;
   padding: 16px 32px;
   color: #000000;
+  list-style: none;
   /* margin-left: 200px; */
 }
 
@@ -55,10 +59,14 @@
   padding: 16px 32px;
   color: #000000;
   display: none;
+  list-style: none;
+
 }
 
 .nav_link {
   color: #e9f7ff;
+  list-style: none;
+
 }
 
 .nav-button:hover {
@@ -78,6 +86,8 @@
 
 .home__nav button {
   display: none;
+  list-style: none;
+
 }
 
 /* @media (min-width: 1200px) {

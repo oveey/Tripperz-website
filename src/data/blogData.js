@@ -29,54 +29,54 @@ export const blogData = [
       <p>Start with a budget. Determine how much you’re willing to spend overall and break it down into categories, namely, flights, accommodation, meals, transportation, and miscellaneous expenses. This can help you stay on track and avoid impulsive spending.</p>
       <h3>2. Finding Cheap Flights</h3>
       <ul>
-        <li>• Booking early: The earlier you book, the better deals you’re likely to find. Aim to book your flights at least three months in advance.</li>
-        <li>• Using flight comparison sites: Websites like Skyscanner, Google Flights, and Kayak help you compare prices across different airlines.</li>
-        <li>• Staying flexible: Traveling mid-week or during off-peak seasons can save you a lot of money.</li>
+        <li>Booking early: The earlier you book, the better deals you’re likely to find. Aim to book your flights at least three months in advance.</li>
+        <li>Using flight comparison sites: Websites like Skyscanner, Google Flights, and Kayak help you compare prices across different airlines.</li>
+        <li>Staying flexible: Traveling mid-week or during off-peak seasons can save you a lot of money.</li>
       </ul>
       <h3>3. Affordable Accommodations</h3>
       <p>These are some of the best ways you can save up on your living arrangements:</p>
       <ul>
-        <li>• Consider alternatives: Instead of hotels, look into hostels, guesthouses, or vacation rentals on Airbnb. You can also try Couchsurfing to stay with locals for free.</li>
-        <li>• Book in advance: Just like flights, booking your accommodation early can lead to you cutting costs significantly.</li>
+        <li>Consider alternatives: Instead of hotels, look into hostels, guesthouses, or vacation rentals on Airbnb. You can also try Couchsurfing to stay with locals for free.</li>
+        <li>Book in advance: Just like flights, booking your accommodation early can lead to you cutting costs significantly.</li>
       </ul>
  
       <h3>4. Saving on Meals </h3>
       <ul>
-        <li>• Cook your own meals: If your accommodation has kitchen facilities, take advantage of them. Shopping at local markets and cooking your meals can be much cheaper than eating out. You can romanticize this experience and see it as an opportunity to test out your intercontinental cooking skills. </li>
-        <li>• Visit local spots: Local eateries often offer better prices and authentic experiences compared to tourist restaurants. Make friends with locals to find the culinary hidden gems in your travel destination. </li>
-        <li>• Take Advantage of Free Breakfasts: Many accommodations offer free breakfast. Make the most of it to save on one meal a day. Additionally, be on the lookout for travel packages that include free breakfasts. All our vacation packages come with free breakfast!</li>
+        <li>Cook your own meals: If your accommodation has kitchen facilities, take advantage of them. Shopping at local markets and cooking your meals can be much cheaper than eating out. You can romanticize this experience and see it as an opportunity to test out your intercontinental cooking skills. </li>
+        <li>Visit local spots: Local eateries often offer better prices and authentic experiences compared to tourist restaurants. Make friends with locals to find the culinary hidden gems in your travel destination. </li>
+        <li>Take Advantage of Free Breakfasts: Many accommodations offer free breakfast. Make the most of it to save on one meal a day. Additionally, be on the lookout for travel packages that include free breakfasts. All our vacation packages come with free breakfast!</li>
       </ul>
 
       <h3>5. Save on transportation  </h3>
       <p>High transport fees can put a serious dent in your budget if you let it. You can avoid this by:</p>
       <ul>
-        <li>• Using public transport: Buses, trains, and trams  ………jhhare usually much cheaper than taxis or car rentals. Look for day passes or travel cards for additional savings.</li>
-        <li>• Walking or Cycling: Exploring on foot or by bike is free and it also gives you a better feel of the city. You can take evening strolls along cobbled streets while enjoying stunning natural views.</li>
-        <li>• Ridesharing: Apps like Uber and Bolt can be more affordable than traditional taxis, especially if you're traveling with friends or family and can split the fare.</li>
+        <li>Using public transport: Buses, trains, and trams  ………jhhare usually much cheaper than taxis or car rentals. Look for day passes or travel cards for additional savings.</li>
+        <li>Walking or Cycling: Exploring on foot or by bike is free and it also gives you a better feel of the city. You can take evening strolls along cobbled streets while enjoying stunning natural views.</li>
+        <li>Ridesharing: Apps like Uber and Bolt can be more affordable than traditional taxis, especially if you're traveling with friends or family and can split the fare.</li>
       </ul>
 
       <h3>6. Currency Exchange</h3>
       <p>You can cut costs on this through:</p>
       <ul>
-        <li>• Monitor Exchange Rates </li>
-        <li>• Keep an eye on exchange rates and exchange money when rates are favorable. Avoid changing money at airports where rates are often less favorable.</li>
-        <li>• Use Local ATMs: Withdrawing money from local ATMs can be cheaper than exchanging large amounts of cash, but be aware of any international transaction fees your bank might charge.</li>
-        <li>• Travel Cards: Consider using travel cards that offer better exchange rates and lower fees for international transactions.</li>
+        <li>Monitor Exchange Rates </li>
+        <li>Keep an eye on exchange rates and exchange money when rates are favorable. Avoid changing money at airports where rates are often less favorable.</li>
+        <li>Use Local ATMs: Withdrawing money from local ATMs can be cheaper than exchanging large amounts of cash, but be aware of any international transaction fees your bank might charge.</li>
+        <li>Travel Cards: Consider using travel cards that offer better exchange rates and lower fees for international transactions.</li>
       </ul>
       <p>Eat Where Locals Eat: Local eateries often offer better prices and authentic experiences compared to tourist restaurants.</p>
 
       <h3>7. Handling Visa Costs</h3>
       <p>Visa fee costs often discourage travelers from exploring more countries but fear not, because there are ways you can lower and altogether avoid handling visa costs. </p>
       <ul>
-        <li>• Plan Ahead: Some countries offer lower visa fees for longer stays. If you’re planning to stay for a while, a longer-term visa might be more cost-effective.</li>
-        <li>• Check Visa-Free Countries: There are countries that Nigerians can enter without a visa or with visa-on-arrival, saving you the cost and hassle of visa applications. Examples include Ghana, Seychelles, Kenya, Mauritius, etc. </li>
+        <li>Plan Ahead: Some countries offer lower visa fees for longer stays. If you’re planning to stay for a while, a longer-term visa might be more cost-effective.</li>
+        <li>Check Visa-Free Countries: There are countries that Nigerians can enter without a visa or with visa-on-arrival, saving you the cost and hassle of visa applications. Examples include Ghana, Seychelles, Kenya, Mauritius, etc. </li>
       </ul>
 
       <h3>8. Additional Tips</h3>
       <ul>
-        <li>• Travel Insurance: Don’t skip on travel insurance. It might seem like an added cost, but it can save you a lot of money if something goes wrong.</li>
-        <li>• Student Discounts: If you’re a student, look for discounts on flights, accommodation, and attractions. Many places offer discounts if you show a student ID.</li>
-        <li>• Traveling abroad doesn't have to be expensive. With some planning, flexibility, and savvy choices, you can make your dream trip a reality without breaking the bank. Happy travels!.</li>
+        <li>Travel Insurance: Don’t skip on travel insurance. It might seem like an added cost, but it can save you a lot of money if something goes wrong.</li>
+        <li>Student Discounts: If you’re a student, look for discounts on flights, accommodation, and attractions. Many places offer discounts if you show a student ID.</li>
+        <li>Traveling abroad doesn't have to be expensive. With some planning, flexibility, and savvy choices, you can make your dream trip a reality without breaking the bank. Happy travels!.</li>
 
       </ul>
     </div>
@@ -107,38 +107,38 @@ export const blogData = [
 
         <h3>1. Essential Items for Different Trips </h3>
         <p>Whether you’re visiting the safaris in South Africa or traveling to bask in the blue beaches of Seychelles, there are important items you need to have for every trip. </p>
-        <ul>
-          <li>• Travel Documents: Always pack your passport, visa (if required), flight tickets, travel insurance, and hotel reservations. Keep these documents in a secure, easily accessible place like a travel wallet</li>
-          <li>• Adapters and Chargers: Different countries have different plug types. An international travel adapter is a must-have to keep your gadgets charged. Don't forget your phone charger and power bank.</li>
-          <li>• Clothing for Cold Countries: If you’re traveling to a cold country, pack warm clothing like thermal wear, sweaters, a good winter coat, gloves, and a beanie. Layering is key to staying warm.</li>
-          <li>• Clothing for Warm Countries: For warmer destinations, pack light, breathable fabrics like cotton. Don’t forget sunglasses, a hat, and sunscreen.</li>
-          <li>• Toiletries: Pack travel-sized toiletries like toothpaste, shampoo, and soap. Remember any prescription medications and carry them in their original packaging with your doctor's prescription.</li>
+        <ul class="marker">
+          <li>Travel Documents: Always pack your passport, visa (if required), flight tickets, travel insurance, and hotel reservations. Keep these documents in a secure, easily accessible place like a travel wallet</li>
+          <li>Adapters and Chargers: Different countries have different plug types. An international travel adapter is a must-have to keep your gadgets charged. Don't forget your phone charger and power bank.</li>
+          <li>Clothing for Cold Countries: If you’re traveling to a cold country, pack warm clothing like thermal wear, sweaters, a good winter coat, gloves, and a beanie. Layering is key to staying warm.</li>
+          <li>Clothing for Warm Countries: For warmer destinations, pack light, breathable fabrics like cotton. Don’t forget sunglasses, a hat, and sunscreen.</li>
+          <li>Toiletries: Pack travel-sized toiletries like toothpaste, shampoo, and soap. Remember any prescription medications and carry them in their original packaging with your doctor's prescription.</li>
         </ul>
 
         <h3> 2. Packing Light and Avoiding Excess Luggage Fees </h3>
         <p>It’s a dreaded feeling to get to the airport and realize your luggage is over the weight limit and you now have to pay extra fees for your excess luggage. You can avoid this experience by packing light.</p>
         <ul>
-          <li>• Use a Packing List: Create a list of everything you need to pack. This helps ensure you don’t forget anything important and prevents overpacking.</li>
-          <li>• Pack Versatile Clothing: Choose clothes that can be mixed and matched to create different outfits. Neutral colors work best.</li>
-          <li>• Roll, Don’t Fold: Rolling your clothes can save space and reduce wrinkles.</li>
-          <li>• Limit Shoes: Shoes can take up a lot of space. Pack no more than two to three pairs, including a comfortable pair for walking.</li>
-          <li>• Weigh Your Luggage: Before leaving for the airport, weigh your luggage to ensure it doesn’t exceed the airline's weight limit. This helps you avoid excess luggage fees..</li>
+          <li>Use a Packing List: Create a list of everything you need to pack. This helps ensure you don’t forget anything important and prevents overpacking.</li>
+          <li>Pack Versatile Clothing: Choose clothes that can be mixed and matched to create different outfits. Neutral colors work best.</li>
+          <li>Roll, Don’t Fold: Rolling your clothes can save space and reduce wrinkles.</li>
+          <li>Limit Shoes: Shoes can take up a lot of space. Pack no more than two to three pairs, including a comfortable pair for walking.</li>
+          <li>Weigh Your Luggage: Before leaving for the airport, weigh your luggage to ensure it doesn’t exceed the airline's weight limit. This helps you avoid excess luggage fees..</li>
         </ul>
 
 
         <h3> 3. Packing for Cultural Differences </h3>
         <p>Every country has its cultural guidelines when it comes to clothing. We advise whatever clothing style you choose for a vacation fit into the culture of your destination. </p>
         <ul>
-          <li>• Dress Appropriately: Research your destination's dress code. Some countries have specific cultural dress requirements, so ensure you respect the cultural rules in the country you’re visiting.</li>
-          <li>• Pack Gifts: If you’re visiting friends or family abroad, consider packing small, lightweight gifts that represent Nigerian culture, like local snacks or handicrafts.</li>
-          <li>• Learn Basic Phrases: Pack a small phrasebook or download a translation app to help with basic communication in a foreign language. You don’t want to be stranded and not be able to communicate in a foreign country.</li>
+          <li>Dress Appropriately: Research your destination's dress code. Some countries have specific cultural dress requirements, so ensure you respect the cultural rules in the country you’re visiting.</li>
+          <li>Pack Gifts: If you’re visiting friends or family abroad, consider packing small, lightweight gifts that represent Nigerian culture, like local snacks or handicrafts.</li>
+          <li>Learn Basic Phrases: Pack a small phrasebook or download a translation app to help with basic communication in a foreign language. You don’t want to be stranded and not be able to communicate in a foreign country.</li>
         </ul>
 
         <h3> Extra Packing Tips</h3>
         <p>These are extra packing tips to make you pack like a pro!</p>
         <ul>
-          <li>• Packing Essentials in Carry-On: Always pack essential items like travel documents, medications, a change of clothes, and toiletries in your carry-on. This way, you’re prepared if your checked luggage is delayed or lost.</li>
-          <li>• Forgetting Important Items: Double-check your packing list before you leave. It’s easy to forget small but important items such as chargers, adapters, or toiletries.</li>
+          <li>Packing Essentials in Carry-On: Always pack essential items like travel documents, medications, a change of clothes, and toiletries in your carry-on. This way, you’re prepared if your checked luggage is delayed or lost.</li>
+          <li>Forgetting Important Items: Double-check your packing list before you leave. It’s easy to forget small but important items such as chargers, adapters, or toiletries.</li>
         </ul>
         <p>Traveling is meant to be an enjoyable experience, and with these packing tips, you can avoid the stress and hassle that often comes with it. Keep it simple, stay organized, and enjoy your vacation!</p>
       </div>
