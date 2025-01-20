@@ -87,7 +87,7 @@
 
 .img__con4 img {
   width: 100%;
-  height: 480px;
+  height: auto;
 }
 
 /***************************************** Travel section **********************************************************************************/
@@ -459,7 +459,7 @@
 
   .img__con2 img {
     width: 100%;
-    height: 480px;
+    height: 280px;
   }
 
   .img__con4 {
@@ -615,9 +615,9 @@
   .whoweare {
     margin-top: 50px;
   }
-  .whoweare h2 {
+  /* .whoweare h2 {
     font-size: 25px;
-  }
+  } */
 
   .whoweare p {
     width: 7rem;
