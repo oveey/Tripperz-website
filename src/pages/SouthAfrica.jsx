@@ -86,8 +86,8 @@ export const SouthAfrica = () => {
               data-aos-duration="3000"
             >
               <img
-                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1733360095/united_kingdom_ifst1c.png"
-                alt="Uk image"
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1737384232/Frame_38_tqrgcf.png"
+                alt="South africa image"
               />
             </div>
           </div>

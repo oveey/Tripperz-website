@@ -202,5 +202,9 @@ p {
     font-size: 32px;
    
   }
+
+  .blog__text h2 {
+    font-size: 25px;
+  }
   
 }
