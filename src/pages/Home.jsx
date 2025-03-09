@@ -119,7 +119,7 @@ export const Home = () => {
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/1_oz3mzf.jpg",
       ],
-      smallT: "Ceo/founder",
+      smallT: "Ceo/Founder",
     },
 
     {
@@ -128,7 +128,7 @@ export const Home = () => {
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/3_g0nirt.jpg",
       ],
-      smallT: "Sales Officer",
+      smallT: "Sales Manager",
     },
 
     {
@@ -137,7 +137,7 @@ export const Home = () => {
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/9_bgsgys.jpg",
       ],
-      smallT: "Sales Manager",
+      smallT: "Digital Marketer",
     },
 
     {
