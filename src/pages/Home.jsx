@@ -169,8 +169,7 @@ export const Home = () => {
         <div className="header__inner__con " data-aos="zoom-in-down">
           <h1 className="header__text">Experience a Lifetime of Adventure</h1>
           <p className="header__p">
-            We are a passionate travel agency that spent years helping people
-            explore the world.
+          Discover the World, One Unforgettable Journey at a Time, with Endless Possibilities Await You
           </p>
           <ScrollLink to="explore" className="button">
             <button className="button__con">
