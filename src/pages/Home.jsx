@@ -33,7 +33,7 @@ export const Home = () => {
   }, []);
 
   const navigate = useNavigate();
-  
+
 
   const blogs = [
     {
@@ -169,7 +169,7 @@ export const Home = () => {
         <div className="header__inner__con " data-aos="zoom-in-down">
           <h1 className="header__text">Experience a Lifetime of Adventure</h1>
           <p className="header__p">
-          Discover the World, One Unforgettable Journey at a Time, with Endless Possibilities Await You
+            Discover the World, One Unforgettable Journey at a Time, with Endless Possibilities Await You
           </p>
           <ScrollLink to="explore" className="button">
             <button className="button__con">
@@ -275,9 +275,8 @@ export const Home = () => {
             {images.map((imageSet) => (
               <div
                 key={imageSet.key}
-                className={`image__con ${
-                  imageSet.key === "set3" ? "south-africa-style" : ""
-                }`}
+                className={`image__con ${imageSet.key === "set3" ? "south-africa-style" : ""
+                  }`}
                 style={{
                   backgroundImage: `url(${imageSet.urls[0]})`,
                   ...(imageSet.key === "set3" && {}),
@@ -368,6 +367,54 @@ export const Home = () => {
               </div>
             </div>
           </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="testimonial__sub">
+              <h2>
+                I had an amazing trip to South Africa with Tripperz Way. From exploring the stunning Safaris to enjoying the warm culture in Cape Town, it was definitely great vacation!
+
+              </h2>
+              <div className="testimonial__cap">
+                <h3> DR. BOLU</h3>
+                <img src="./assets/Stars.svg" alt="stars" />
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="testimonial__sub">
+              <h2>
+                I’ve always been worried about traveling internationally but my mindset has changed thanks to Tripperz Way! Their lovely travel representatives made sure I had a seamless trip from start to finish, I can’t wait to book my next trip with them.
+              </h2>
+              <div className="testimonial__cap">
+                <h3> DR.YEMI </h3>
+                <img src="./assets/Stars.svg" alt="stars" />
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="testimonial__sub">
+              <h2>
+                I’ve known about Tripperz Way for a while and decided to book my last trip to Seychelles with them. What I really loved about my experience was the consistent communication. They stayed in touch with me throughout my trip and were available to resolve any issues that came up! I highly recommend them for anyone who’s anxious or scared about traveling abroad!
+
+              </h2>
+              <div className="testimonial__cap">
+                <h3> DR.BODE </h3>
+                <img src="./assets/Stars.svg" alt="stars" />
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="testimonial__sub">
+              <h2>
+                All my trips with Tripperz Way have been unforgettable! With them, I’ve had lovely visits to Spain, Canada and the UK. They always take their time to plan a detailed itinerary and they also book the best hotel accommodations!
+
+              </h2>
+              <div className="testimonial__cap">
+                <h3> AMBASSADOR SEUN </h3>
+                <img src="./assets/Stars.svg" alt="stars" />
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </section>
 
@@ -379,9 +426,8 @@ export const Home = () => {
             {teamImages.map((imageSet) => (
               <div
                 key={imageSet.key}
-                className={`team__image__con ${
-                  imageSet.key === "set2" ? "set2-highlight" : ""
-                }`}
+                className={`team__image__con ${imageSet.key === "set2" ? "set2-highlight" : ""
+                  }`}
                 style={{ backgroundImage: `url(${imageSet.urls[0]})` }}
               >
                 <div className="team__text">
