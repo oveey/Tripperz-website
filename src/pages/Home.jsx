@@ -133,20 +133,20 @@ export const Home = () => {
 
     {
       key: "set3",
-      mainT: "Christabel Obadaseraye",
+      mainT: "Zanas Emadamerho-Atori",
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/9_bgsgys.jpg",
       ],
-      smallT: "Digital Marketer",
+      smallT: "Digital Marketer/Sales Officer",
     },
 
     {
       key: "set4",
-      mainT: "Zanas Emadamerho-Ator",
+      mainT: "Christabel Obadaseraye",
       urls: [
         "https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384911/2_b5fjou.jpg",
       ],
-      smallT: "Digital Marketer/ Sales Officer",
+      smallT: "Sales Executive",
     },
 
     {
