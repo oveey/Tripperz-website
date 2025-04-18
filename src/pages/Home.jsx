@@ -205,7 +205,7 @@ export const Home = () => {
               </div>
 
               <div className="box_1">
-                <h3>500+</h3>
+                <h3>2000+</h3>
                 <h6>Happy Travelers</h6>
               </div>
 
