@@ -210,7 +210,7 @@ export const Home = () => {
               </div>
 
               <div className="box_1">
-                <h3>95%</h3>
+                <h3>100%</h3>
                 <h6>Customer Satisfaction</h6>
               </div>
             </div>
@@ -459,22 +459,22 @@ export const Home = () => {
           data-aos-duration="3000"
         >
           <h1 className="location__heading">Our location</h1>
+
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63432.43500191985!2d3.6237259419604153!3d6.454682590673177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf9ad9283e39b%3A0x1dbc4c625ed7f850!2sJoy%20Good%20mall!5e0!3m2!1sen!2sng!4v1733488888596!5m2!1sen!2sng"
-            width="100%"
-            height="600"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.463965812683!2d3.6743092749924093!3d6.462753693528839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bfeb946206f77%3A0x4faad975505c60c1!2sKm.28!5e0!3m2!1sen!2sng!4v1746006846026!5m2!1sen!2sng" 
+            width="100%" 
+            height="600" 
             style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Map showing the location of Joy Good Mall, Sangotedo, Lagos, Nigeria"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            title="Map showing the location of lekk, Lagos, Nigeria"
           ></iframe>
 
           <div className="location__sub">
             <h2>Lagos</h2>
             <p>
-              Suite 9, Joygood Mall, Km 27, Lekki-Epe Express Way, Opposite Fara
-              Park, Sangotedo, Lagos, Nigeria
+              Kilometer 28, Lekki-Epe expressway Opposite 2nd gate Abijo GRA, Lagos.
             </p>
           </div>
         </div>
