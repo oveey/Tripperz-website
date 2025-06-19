@@ -104,16 +104,16 @@ export const Home = () => {
       smallT: 'Ceo/Founder',
     },
     {
-      key: 'set2',
-      mainT: 'Oyindamola Olaoye',
-      urls: ['https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/3_g0nirt.jpg'],
-      smallT: 'Sales Manager',
-    },
-    {
       key: 'set3',
       mainT: 'Akanbi Dorcas Damilola',
       urls: ['https://res.cloudinary.com/devwillyy/image/upload/v1750206331/akanbi_dorcas_u5wmyn.jpg'],
       smallT: 'Human Resource Manager',
+    },
+    {
+      key: 'set2',
+      mainT: 'Oyindamola Olaoye',
+      urls: ['https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/3_g0nirt.jpg'],
+      smallT: 'Sales Manager',
     },
     {
       key: 'set4',
