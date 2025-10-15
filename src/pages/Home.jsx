@@ -109,24 +109,10 @@ export const Home = () => {
       urls: ['https://res.cloudinary.com/devwillyy/image/upload/v1750206331/akanbi_dorcas_u5wmyn.jpg'],
       smallT: 'Human Resource Manager',
     },
-    {
-      key: 'set2',
-      mainT: 'Oyindamola Olaoye',
-      urls: ['https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384912/3_g0nirt.jpg'],
-      smallT: 'Sales Manager',
-    },
-    {
-      key: 'set4',
-      mainT: 'Christabel Obadaseraye',
-      urls: ['https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384911/2_b5fjou.jpg'],
-      smallT: 'Sales Executive',
-    },
-    {
-      key: 'set5',
-      mainT: 'Precious Effiong',
-      urls: ['https://res.cloudinary.com/dw3vqhvte/image/upload/v1732384914/8_movvxu.jpg'],
-      smallT: 'Visa Officer',
-    },
+    
+   
+    
+   
   ];
 
   return (
