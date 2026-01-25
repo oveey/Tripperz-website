@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
+
+// React Router imports
 import { Link, useLocation } from "react-router-dom";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
+// react-scroll imports with alias
+import { animateScroll as scroll } from "react-scroll";
+// CSS
 import "../styles/nav.css";
+
 
 export const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
