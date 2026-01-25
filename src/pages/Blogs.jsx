@@ -1,13 +1,25 @@
+import React from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import BlogCard from "../component/blog-components/BlogCard";
 import BlogCategories from "../component/blog-components/BlogCategories";
 import BlogHero from "./BlogHero";
 import BlogPagination from "../component/blog-components/BlogPagination";
 import { blogData, categoryData } from "../data/blogData";
 import Whatsapp from "../component/Whatsapp";
-import { useState } from "react";
 import { Footer } from "../component/Footer";
 
 export const Blogs = () => {
+
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   const [filteredBlogs, setFilteredBlogs] = useState(blogData);
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("All");

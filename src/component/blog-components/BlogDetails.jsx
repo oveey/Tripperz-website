@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Footer } from "../Footer";
 
 
@@ -68,6 +69,13 @@ const BlogDetails = ({ title,  author, date, content, }) => {
       <Footer />
     </>
   );
+};
+
+BlogDetails.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 export default BlogDetails;

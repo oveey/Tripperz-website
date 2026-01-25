@@ -8,7 +8,7 @@ import {
   faInstagram,
   faLinkedin,
   faTiktok,
-  faWhatsapp,
+ 
 } from "@fortawesome/free-brands-svg-icons";
 import "aos/dist/aos.css";
 

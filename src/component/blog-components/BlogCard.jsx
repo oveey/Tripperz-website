@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./blog.css";
+import PropTypes from "prop-types";
 
 const BlogCard = ({
   id,
@@ -39,6 +40,16 @@ const BlogCard = ({
       </div>
     </div>
   );
+};
+
+BlogCard.propTypes = {
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  date: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date)]).isRequired,
+  category: PropTypes.string.isRequired,
 };
 
 export default BlogCard;

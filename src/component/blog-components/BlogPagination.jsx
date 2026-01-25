@@ -1,3 +1,6 @@
+import React from "react";
+import PropTypes from "prop-types";
+
 const BlogPagination = ({ currentPage, totalPages, onPageChange }) => {
   const handlePrevious = () => {
     if (currentPage > 1) onPageChange(currentPage - 1);
@@ -43,6 +46,12 @@ const BlogPagination = ({ currentPage, totalPages, onPageChange }) => {
       </button>
     </div>
   );
+};
+
+BlogPagination.propTypes = {
+  currentPage: PropTypes.number.isRequired,
+  totalPages: PropTypes.number.isRequired,
+  onPageChange: PropTypes.func.isRequired,
 };
 
 export default BlogPagination;

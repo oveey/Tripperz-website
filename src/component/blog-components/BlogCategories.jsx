@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "./blog.css";
 
 const BlogCategories = ({ categories, onSelectCategory }) => {
@@ -32,6 +33,11 @@ const BlogCategories = ({ categories, onSelectCategory }) => {
       </ul>
     </div>
   );
+};
+
+BlogCategories.propTypes = {
+  categories: PropTypes.array.isRequired,
+  onSelectCategory: PropTypes.func.isRequired,
 };
 
 export default BlogCategories;
