@@ -84,14 +84,7 @@ export const Footer = () => {
                 <FontAwesomeIcon className="icon" icon={faLinkedin} />
               </a>
 
-              {/* <a
-                href="https://www.linkedin.com/company/tripperzway/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-               <FontAwesomeIcon className="icon" icon={faWhatsapp}/>
-              </a> */}
-
+             
               <a
                 href="https://www.tiktok.com/@tripperz_way"
                 target="_blank"

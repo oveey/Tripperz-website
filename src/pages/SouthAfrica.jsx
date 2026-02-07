@@ -75,7 +75,7 @@ export const SouthAfrica = () => {
           >
             <h1>South Africa</h1>
             <h2>
-              South Africa, known as the "Rainbow Nation," offers a rich
+              South Africa, known as the Rainbow Nation, it offers a rich
               cultural experience, iconic wildlife, and stunning natural
               landscapes.
             </h2>

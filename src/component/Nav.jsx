@@ -54,6 +54,13 @@ export const Nav = () => {
     };
   }, []);
 
+
+  // Add this new useEffect here
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
+
   const toggleMenu = () => {
     if (isMobile) {
       setIsOpen(!isOpen);
